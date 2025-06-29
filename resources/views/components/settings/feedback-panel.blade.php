@@ -3,13 +3,13 @@
     <!-- Panel body -->
     <div class="p-6 space-y-6">
         <div>
-            <h2 class="text-2xl text-gray-800 dark:text-gray-100 font-bold mb-4">Give Feedback</h2>
-            <div class="text-sm">Our product depends on customer feedback to improve the overall experience!</div>
+            <h2 class="text-2xl text-gray-800 dark:text-gray-100 font-bold mb-4">{{ __('ui.give_feedback') }}</h2>
+            <div class="text-sm">{{ __('ui.feedback_description') }}</div>
         </div>
 
         <!-- Rate -->
         <section>
-            <h3 class="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold mb-6">How likely would you recommend us to a friend or colleague?</h3>
+            <h3 class="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold mb-6">{{ __('ui.feedback_question') }}</h3>
             <div class="w-full max-w-xl">
                 <div class="relative">
                     <div class="absolute left-0 top-1/2 -mt-px w-full h-0.5 bg-gray-200 dark:bg-gray-700/60" aria-hidden="true"></div>
@@ -42,18 +42,18 @@
                     </ul>
                 </div>
                 <div class="w-full flex justify-between text-sm text-gray-500 dark:text-gray-400 italic mt-3">
-                    <div>Not at all</div>
-                    <div>Extremely likely</div>
+                    <div>{{ __('ui.not_at_all') }}</div>
+                    <div>{{ __('ui.extremely_likely') }}</div>
                 </div>
             </div>
         </section>
 
         <!-- Tell us in words -->
         <section>
-            <h3 class="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold mb-5">Tell us in words</h3>
+            <h3 class="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold mb-5">{{ __('ui.tell_us_in_words') }}</h3>
             <!-- Form -->
-            <label class="sr-only" for="feedback">Leave a feedback</label>
-            <textarea id="feedback" class="form-textarea w-full focus:border-gray-300" rows="4" placeholder="I really enjoy…"></textarea>
+            <label class="sr-only" for="feedback">{{ __('ui.leave_feedback') }}</label>
+            <textarea id="feedback" class="form-textarea w-full focus:border-gray-300" rows="4" placeholder="{{ __('ui.feedback_placeholder') }}"></textarea>
         </section>
     </div>
 
@@ -61,8 +61,8 @@
     <footer>
         <div class="flex flex-col px-6 py-5 border-t border-gray-200 dark:border-gray-700/60">
             <div class="flex self-end">
-                <button class="btn dark:bg-gray-800 border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300">Cancel</button>
-                <button class="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white ml-3">Save Changes</button>
+                <button class="btn dark:bg-gray-800 border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300">{{ __('ui.cancel') }}</button>
+                <button class="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white ml-3">{{ __('ui.save_changes') }}</button>
             </div>
         </div>
     </footer>

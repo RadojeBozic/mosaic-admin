@@ -17,7 +17,7 @@
                 <div class="text-sm font-semibold text-violet-500 uppercase mb-2">Mon 27 Dec, 2024 - 9:00 PM -&gt; 10:00 PM</div>
                 <header class="mb-4">
                     <!-- Title -->
-                    <h1 class="text-2xl md:text-3xl text-gray-800 dark:text-gray-100 font-bold mb-2">The World of AI and Machine Learning — Open Chat</h1>
+                    <h1 class="text-2xl md:text-3xl text-gray-800 dark:text-gray-100 font-bold mb-2">The World of AI and Machine Learning — Open Chat </h1>
                     <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.</p>
                 </header>
 
@@ -28,7 +28,7 @@
                         <a class="block mr-2 shrink-0" href="#0">
                             <img class="rounded-full" src="{{ asset('images/user-32-07.jpg') }}" width="32" height="32" alt="User 04" />
                         </a>
-                        <div class="text-sm whitespace-nowrap">Hosted by <a class="font-semibold text-gray-800 dark:text-gray-100" href="#0">Monica Fishkin</a></div>
+                        <div class="text-sm whitespace-nowrap">{{ __('ui.hosted_by') }} <a class="font-semibold text-gray-800 dark:text-gray-100" href="#0">Monica Fishkin</a></div>
                     </div>
                     <!-- Right side -->
                     <div class="flex flex-wrap items-center sm:justify-end space-x-2">
@@ -37,9 +37,9 @@
                             <svg class="w-4 h-3 fill-gray-400 dark:fill-gray-500 mr-2" viewBox="0 0 16 12">
                                 <path d="m16 2-4 2.4V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7.6l4 2.4V2ZM2 10V2h8v8H2Z" />
                             </svg>
-                            <span>Online Event</span>
+                            <span>{{ __('ui.online_event') }}</span>
                         </div>
-                        <div class="text-xs inline-flex font-medium uppercase bg-green-500/20 text-green-700 rounded-full text-center px-2.5 py-1">Free</div>
+                        <div class="text-xs inline-flex font-medium uppercase bg-green-500/20 text-green-700 rounded-full text-center px-2.5 py-1">{{ __('ui.free') }}</div>
                     </div>
                 </div>
 

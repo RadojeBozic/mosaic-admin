@@ -21,7 +21,7 @@
                                 <div class="flex items-center space-x-3 mb-5">
                                     <img class="rounded-full shrink-0" src="{{ asset('images/user-40-02.jpg') }}" width="40" height="40" alt="User 02" />
                                     <div class="grow">
-                                        <label for="status-input" class="sr-only">What's happening, Mark?</label>
+                                        <label for="status-input" class="sr-only">What's happening, Mark? </label>
                                         <input id="status-input" class="form-input w-full bg-gray-100 dark:bg-gray-700 border-transparent dark:border-transparent focus:bg-white dark:focus:bg-gray-800 placeholder-gray-500" type="text" placeholder="What's happening, Mark?">
                                     </div>
                                 </div>
@@ -31,7 +31,7 @@
                                             <svg class="fill-violet-400 mr-2" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M0 0h2v16H0V0Zm14 0h2v16h-2V0Zm-3 7H5c-.6 0-1-.4-1-1V1c0-.6.4-1 1-1h6c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1ZM6 5h4V2H6v3Zm5 11H5c-.6 0-1-.4-1-1v-5c0-.6.4-1 1-1h6c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1Zm-5-2h4v-3H6v3Z" />
                                             </svg>
-                                            <span>Media</span>
+                                            <span>{{ __('ui.media') }}</span>
                                         </button>
                                         <button class="inline-flex items-center text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-200">
                                             <svg class="fill-violet-400 mr-2" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">

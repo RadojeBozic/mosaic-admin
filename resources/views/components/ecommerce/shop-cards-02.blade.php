@@ -10,7 +10,7 @@
                     <svg class="w-3 h-3 shrink-0 fill-current text-yellow-500 mr-1" viewBox="0 0 12 12">
                         <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
                     </svg>
-                    <span>Popular</span>
+                    <span>Popular {{ __('ui.popular') }}</span>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
             </div>
             <!-- Card footer -->
             <div>
-                <a class="btn-sm w-full bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white" href="#0">Buy Now</a>
+                <a class="btn-sm w-full bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white" href="#0"> {{ __('ui.buy_now') }}</a>
             </div>
         </div>
     </div>
@@ -85,7 +85,7 @@
             </div>
             <!-- Card footer -->
             <div>
-                <a class="btn-sm w-full bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white" href="#0">Buy Now</a>
+                <a class="btn-sm w-full bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white" href="#0"> {{ __('ui.buy_now') }}</a>
             </div>
         </div>
     </div>
@@ -128,7 +128,7 @@
             </div>
             <!-- Card footer -->
             <div>
-                <a class="btn-sm w-full bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white" href="#0">Buy Now</a>
+                <a class="btn-sm w-full bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white" href="#0"> {{ __('ui.buy_now') }}</a>
             </div>
         </div>
     </div>
@@ -170,7 +170,7 @@
             </div>
             <!-- Card footer -->
             <div>
-                <a class="btn-sm w-full bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white" href="#0">Buy Now</a>
+                <a class="btn-sm w-full bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white" href="#0">{{ __('ui.buy_now') }}</a>
             </div>
         </div>
     </div>

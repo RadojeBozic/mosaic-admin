@@ -10,22 +10,22 @@
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
                             <div class="flex items-center">
                                 <label class="inline-flex">
-                                    <span class="sr-only">Select all</span>
+                                    <span class="sr-only">{{ __('ui.select_all') }} </span>
                                     <input id="parent-checkbox" class="form-checkbox" type="checkbox" @click="toggleAll" />
                                 </label>
                             </div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold text-left">Counterparty</div>
+                            <div class="font-semibold text-left"> {{ __('ui.counterparty') }}</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold text-left">Payment Date</div>
+                            <div class="font-semibold text-left">{{ __('ui.payment_date') }}</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold text-left">Status</div>
+                            <div class="font-semibold text-left">{{ __('ui.status') }}</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold text-right">Amount</div>
+                            <div class="font-semibold text-right">{{ __('ui.amount') }}</div>
                         </th>
                     </tr>
                 </thead>
@@ -51,7 +51,7 @@
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
                                 <div class="flex items-center">
                                     <label class="inline-flex">
-                                        <span class="sr-only">Select</span>
+                                        <span class="sr-only">{{ __('ui.select') }}</span>
                                         <input class="table-item form-checkbox" type="checkbox" @click.stop="uncheckParent" />
                                     </label>
                                 </div>

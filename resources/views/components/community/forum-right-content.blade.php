@@ -4,7 +4,7 @@
 
             <!-- Button -->
             <div class="mb-6">
-                <button class="btn w-full bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">Create Post</button>
+                <button class="btn w-full bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">{{ __('ui.create_post') }}</button>
             </div>
 
             <!-- Blocks -->
@@ -12,7 +12,7 @@
                 
                 <!-- Block 1 -->
                 <div class="bg-white dark:bg-gray-800 p-4 rounded-xl">
-                    <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase mb-4">Forum Meetups</div>
+                    <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase mb-4">{{ __('ui.forum_meetups') }}</div>
                     <ul>
                         <!-- Event 1 -->
                         <li class="relative pb-4 last-of-type:pb-0">
@@ -114,41 +114,41 @@
 
                 <!-- Block 2 -->
                 <div class="bg-white dark:bg-gray-800 p-4 rounded-xl">
-                    <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase mb-4">Popular Stories</div>
+                    <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase mb-4">{{ __('ui.popular_stories') }}</div>
                     <ul class="space-y-3">
                         <li>
                             <div class="text-sm mb-1">
                                 <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">I built and sold 2 small SaaS products and quit my job in the last two years — AMA</a>
                             </div>
-                            <div class="text-xs text-gray-500"><a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">markusj</a> · 2d · 312 comments</div>
+                            <div class="text-xs text-gray-500"><a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">markusj</a> · 2d · 312 {{ __('ui.comments') }}</div>
                         </li>
                         <li>
                             <div class="text-sm mb-1">
                                 <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Besides Product Hunt, where else should I promote my new project? 🤔</a>
                             </div>
-                            <div class="text-xs text-gray-500"><a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">katemerlu</a> · 2h · 7 comments</div>
+                            <div class="text-xs text-gray-500"><a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">katemerlu</a> · 2h · 7 {{ __('ui.comments') }}</div>
                         </li>
                         <li>
                             <div class="text-sm mb-1">
                                 <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Which are the main channels you use to drive traffic to your website? 📈</a>
                             </div>
-                            <div class="text-xs text-gray-500"><a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">sophiestar</a> · 3d · 66 comments</div>
+                            <div class="text-xs text-gray-500"><a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">sophiestar</a> · 3d · 66 {{ __('ui.comments') }}</div>
                         </li>
                         <li>
                             <div class="text-sm mb-1">
                                 <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Failed for the past 12 years as a tech entrepreneur. My key takeaways.</a>
                             </div>
-                            <div class="text-xs text-gray-500"><a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">ekuplu89</a> · 4h · 14 comments</div>
+                            <div class="text-xs text-gray-500"><a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">ekuplu89</a> · 4h · 14 {{ __('ui.comments') }}</div>
                         </li>
                         <li>
                             <div class="text-sm mb-1">
                                 <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">How to build a following on Twitter as a founder - A guide to growing your audience 🚀</a>
                             </div>
-                            <div class="text-xs text-gray-500"><a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">molliehacks</a> · 3d · 32 comments</div>
+                            <div class="text-xs text-gray-500"><a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">molliehacks</a> · 3d · 32 {{ __('ui.comments') }}</div>
                         </li>
                     </ul>
                     <div class="mt-4">
-                        <button class="btn-sm w-full bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300">View All</button>
+                        <button class="btn-sm w-full bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300">{{ __('ui.view_all') }}</button>
                     </div>
                 </div>
 

@@ -11,7 +11,7 @@
                     @click.prevent="open = !open"
                     :aria-expanded="open"
                 >
-                    <span class="sr-only">Menu</span>
+                    <span class="sr-only">{{ __('ui.menu') }}</span>
                     <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
                         <circle cx="16" cy="16" r="2" />
                         <circle cx="10" cy="16" r="2" />
@@ -33,19 +33,19 @@
                 >
                     <ul>
                         <li>
-                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Option 1</a>
+                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.option_1') }}</a>
                         </li>
                         <li>
-                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Option 2</a>
+                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.option_2') }}</a>
                         </li>
                         <li>
-                            <a class="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Remove</a>
+                            <a class="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.remove') }}</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </header>
-        <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase mb-1">Sales</div>
+        <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase mb-1">{{ __('ui.sales') }}</div>
         <div class="flex items-start">
             <div class="text-3xl font-bold text-gray-800 dark:text-gray-100 mr-2">${{ number_format($dataFeed->sumDataSet(3, 1), 0) }}</div>
             <div class="text-sm font-medium text-green-700 px-1.5 bg-green-500/20 rounded-full">+29%</div>

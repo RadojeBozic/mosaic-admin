@@ -3,7 +3,7 @@
         <header>
             <h3 class="text-sm font-semibold text-gray-500 uppercase mb-1"><span class="text-gray-800 dark:text-gray-100">Google</span> - Alphabet</h3>
             <div class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-1">$2,860.96</div>
-            <div class="text-sm"><span class="font-medium text-red-500">-$49 (4,7%)</span> - Today</div>
+            <div class="text-sm"><span class="font-medium text-red-500">-$49 (4,7%)</span> - {{ __('ui.today') }}</div>
         </header>
     </div>
     <div class="grow">

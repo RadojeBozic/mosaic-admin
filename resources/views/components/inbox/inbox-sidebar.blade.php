@@ -21,7 +21,7 @@
                             >
                                 <img class="w-8 h-8 rounded-full mr-2" src="{{ asset('images/channel-01.png') }}" width="32" height="32" alt="Group 01" />
                                 <div class="truncate">
-                                    <span class="font-semibold text-gray-800 dark:text-gray-100">#Marketing</span>
+                                    <span class="font-semibold text-gray-800 dark:text-gray-100">#Marketing {{ __('ui.marketing') }}</span>
                                 </div>
                                 <svg class="w-3 h-3 shrink-0 ml-1 fill-current text-gray-400 dark:text-gray-500" viewBox="0 0 12 12">
                                     <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z" />
@@ -46,7 +46,7 @@
                                             <div class="flex items-center justify-between">
                                                 <div class="grow flex items-center truncate">
                                                     <img class="w-7 h-7 rounded-full mr-2" src="{{ asset('images/channel-01.png') }}" width="28" height="28" alt="Channel 01" />
-                                                    <div class="truncate">#Marketing</div>
+                                                    <div class="truncate">#{{ __('ui.marketing') }}</div>
                                                 </div>
                                                 <svg class="w-3 h-3 shrink-0 fill-current text-violet-500 ml-1" viewBox="0 0 12 12">
                                                     <path d="M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z" />
@@ -59,7 +59,7 @@
                                             <div class="flex items-center justify-between">
                                                 <div class="grow flex items-center truncate">
                                                     <img class="w-7 h-7 rounded-full mr-2" src="{{ asset('images/channel-02.png') }}" width="28" height="28" alt="Channel 02" />
-                                                    <div class="truncate">#Developing</div>
+                                                    <div class="truncate">#{{ __('ui.developing') }}</div>
                                                 </div>
                                             </div>
                                         </a>
@@ -69,7 +69,7 @@
                                             <div class="flex items-center justify-between">
                                                 <div class="grow flex items-center truncate">
                                                     <img class="w-7 h-7 rounded-full mr-2" src="{{ asset('images/channel-03.png') }}" width="28" height="28" alt="Channel 03" />
-                                                    <div class="truncate">#ProductSupport</div>
+                                                    <div class="truncate">#{{ __('ui.product_support') }}</div>
                                                 </div>
                                             </div>
                                         </a>
@@ -90,9 +90,9 @@
             <div class="px-5 py-4">
                 <!-- Search form -->
                 <form class="relative">
-                    <label for="inbox-search" class="sr-only">Search</label>
-                    <input id="inbox-search" class="form-input w-full pl-9 bg-white dark:bg-gray-800" type="search" placeholder="Search…" />
-                    <button class="absolute inset-0 right-auto group" type="submit" aria-label="Search">
+                    <label for="inbox-search" class="sr-only">{{ __('ui.search') }}</label>
+                    <input id="inbox-search" class="form-input w-full pl-9 bg-white dark:bg-gray-800" type="search" placeholder="{{ __('ui.search') }}…" />
+                    <button class="absolute inset-0 right-auto group" type="submit" aria-label="{{ __('ui.search') }}">
                         <svg class="shrink-0 fill-current text-gray-400 dark:text-gray-500 group-hover:text-gray-500 dark:group-hover:text-gray-400 ml-3 mr-2" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 14c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM7 2C4.243 2 2 4.243 2 7s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z" />
                             <path d="M15.707 14.293L13.314 11.9a8.019 8.019 0 01-1.414 1.414l2.393 2.393a.997.997 0 001.414 0 .999.999 0 000-1.414z" />
@@ -104,19 +104,19 @@
                     <div class="absolute bottom-0 w-full h-px bg-gray-200 dark:bg-gray-700/60" aria-hidden="true"></div>
                     <ul class="relative text-sm font-medium flex flex-nowrap -mx-4 sm:-mx-6 lg:-mx-8 overflow-x-scroll no-scrollbar">
                         <li class="mr-6 last:mr-0 first:pl-4 sm:first:pl-6 lg:first:pl-8 last:pr-4 sm:last:pr-6 lg:last:pr-8">
-                            <a class="block pb-3 text-violet-500 whitespace-nowrap border-b-2 border-violet-500" href="#0">Primary</a>
+                            <a class="block pb-3 text-violet-500 whitespace-nowrap border-b-2 border-violet-500" href="#0"> {{ __('ui.primary') }}</a>
                         </li>
                         <li class="mr-6 last:mr-0 first:pl-4 sm:first:pl-6 lg:first:pl-8 last:pr-4 sm:last:pr-6 lg:last:pr-8">
-                            <a class="block pb-3 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 whitespace-nowrap" href="#0">Social</a>
+                            <a class="block pb-3 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 whitespace-nowrap" href="#0">{{ __('ui.social') }}</a>
                         </li>
                         <li class="mr-6 last:mr-0 first:pl-4 sm:first:pl-6 lg:first:pl-8 last:pr-4 sm:last:pr-6 lg:last:pr-8">
-                            <a class="block pb-3 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 whitespace-nowrap" href="#0">Promotions</a>
+                            <a class="block pb-3 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 whitespace-nowrap" href="#0">{{ __('ui.promotions') }}</a>
                         </li>
                     </ul>
                 </div>
                 <!-- Inbox -->
                 <div class="mt-4">
-                    <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase mb-3">Inbox (44)</div>
+                    <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase mb-3">Inbox {{ __('ui.inbox') }}   (44)</div>
                     <ul class="mb-6">
                         <li class="-mx-2">
                             <button class="flex w-full p-2 rounded-lg bg-linear-to-r from-violet-500/[0.12] dark:from-violet-500/[0.24] to-violet-500/[0.04] text-left" @click="inboxSidebarOpen = false">
@@ -126,7 +126,7 @@
                                         <div class="truncate">
                                             <span class="text-sm font-semibold text-gray-800 dark:text-gray-100">Dominik Lamakani</span>
                                         </div>
-                                        <div class="text-xs text-gray-500 font-medium">4 Aug</div>
+                                        <div class="text-xs text-gray-500 font-medium">4 Aug </div>
                                     </div>
                                     <div class="text-xs font-medium text-gray-800 dark:text-gray-100 truncate mb-0.5">Chill your mind with this amazing offer 🎉</div>
                                     <div class="text-xs whitespace-normal">Lorem ipsum dolor sit amet, consecte adipiscing elit aute irure dolor…</div>

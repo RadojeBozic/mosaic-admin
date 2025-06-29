@@ -13,7 +13,7 @@
             aria-controls="profile-sidebar"
             :aria-expanded="profileSidebarOpen"
         >
-            <span class="sr-only">Close sidebar</span>
+            <span class="sr-only">{{ __('ui.close_sidebar') }}</span>
             <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.7 18.7l1.4-1.4L7.8 13H20v-2H7.8l4.3-4.3-1.4-1.4L4 12z" />
             </svg>
@@ -51,7 +51,7 @@
                         <svg class="fill-current shrink-0" width="11" height="8" viewBox="0 0 11 8">
                             <path d="m.457 4.516.969-.99 2.516 2.481L9.266.702l.985.99-6.309 6.284z" />
                         </svg>
-                        <span class="ml-2">Following</span>
+                        <span class="ml-2">{{ __('ui.following') }}</span>
                     </button>
                 </div>
 
@@ -92,13 +92,13 @@
             <div class="absolute bottom-0 w-full h-px bg-gray-200 dark:bg-gray-700/60" aria-hidden="true"></div>
             <ul class="relative text-sm font-medium flex flex-nowrap -mx-4 sm:-mx-6 lg:-mx-8 overflow-x-scroll no-scrollbar">
                 <li class="mr-6 last:mr-0 first:pl-4 sm:first:pl-6 lg:first:pl-8 last:pr-4 sm:last:pr-6 lg:last:pr-8">
-                    <a class="block pb-3 text-violet-500 whitespace-nowrap border-b-2 border-violet-500" href="#0">General</a>
+                    <a class="block pb-3 text-violet-500 whitespace-nowrap border-b-2 border-violet-500" href="#0">{{ __('ui.general') }}</a>
                 </li>
                 <li class="mr-6 last:mr-0 first:pl-4 sm:first:pl-6 lg:first:pl-8 last:pr-4 sm:last:pr-6 lg:last:pr-8">
-                    <a class="block pb-3 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 whitespace-nowrap" href="#0">Connections</a>
+                    <a class="block pb-3 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 whitespace-nowrap" href="#0">{{ __('ui.connections') }}</a>
                 </li>
                 <li class="mr-6 last:mr-0 first:pl-4 sm:first:pl-6 lg:first:pl-8 last:pr-4 sm:last:pr-6 lg:last:pr-8">
-                    <a class="block pb-3 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 whitespace-nowrap" href="#0">Contributions</a>
+                    <a class="block pb-3 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 whitespace-nowrap" href="#0">{{ __('ui.contributions') }}</a>
                 </li>
             </ul>
         </div>
@@ -111,7 +111,7 @@
     
                 <!-- About Me -->
                 <div>
-                    <h2 class="text-gray-800 dark:text-gray-100 font-semibold mb-2">About Me</h2>
+                    <h2 class="text-gray-800 dark:text-gray-100 font-semibold mb-2">{{ __('ui.about_me') }}</h2>
                     <div class="text-sm space-y-2">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         <p>Consectetur adipiscing elit, sed do eiusmod tempor magna aliqua.</p>
@@ -120,7 +120,7 @@
     
                 <!-- Departments -->
                 <div>
-                    <h2 class="text-gray-800 dark:text-gray-100 font-semibold mb-2">Departments</h2>
+                    <h2 class="text-gray-800 dark:text-gray-100 font-semibold mb-2">{{ __('ui.departments') }}</h2>
                     <!-- Cards -->
                     <div class="grid xl:grid-cols-2 gap-4">
 
@@ -176,7 +176,7 @@
                                 </div>
                                 <!-- Link -->
                                 <div>
-                                    <a class="text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">View -&gt;</a>
+                                    <a class="text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">{{ __('ui.view') }} -&gt;</a>
                                 </div>
                             </div>
                         </div>
@@ -187,7 +187,7 @@
     
                 <!-- Work History -->
                 <div>
-                    <h2 class="text-gray-800 dark:text-gray-100 font-semibold mb-2">Work History</h2>
+                    <h2 class="text-gray-800 dark:text-gray-100 font-semibold mb-2">{{ __('ui.work_history') }}</h2>
                     <div class="bg-white dark:bg-gray-900 p-4 border border-gray-200 dark:border-gray-700/60 rounded-lg shadow-xs">
                         <ul class="space-y-3">
 
@@ -202,7 +202,7 @@
                                     </div>
                                     <!-- Position -->
                                     <div>
-                                        <div class="font-medium text-gray-800 dark:text-gray-100">Senior Product Designer</div>
+                                        <div class="font-medium text-gray-800 dark:text-gray-100">Senior Product Designer </div>
                                         <div class="flex flex-nowrap items-center space-x-2 whitespace-nowrap">
                                             <div>Remote</div>
                                             <div class="text-gray-400 dark:text-gray-600">·</div>
@@ -296,23 +296,23 @@
             <!-- Sidebar -->
             <aside class="xl:min-w-56 xl:w-56 space-y-3">
                 <div class="text-sm">
-                    <h3 class="font-medium text-gray-800 dark:text-gray-100">Title</h3>
+                    <h3 class="font-medium text-gray-800 dark:text-gray-100">{{ __('ui.title') }}</h3>
                     <div>Senior Product Designer</div>
                 </div>
                 <div class="text-sm">
-                    <h3 class="font-medium text-gray-800 dark:text-gray-100">Location</h3>
+                    <h3 class="font-medium text-gray-800 dark:text-gray-100">{{ __('ui.location') }}</h3>
                     <div>Milan, IT - Remote</div>
                 </div>
                 <div class="text-sm">
-                    <h3 class="font-medium text-gray-800 dark:text-gray-100">Email</h3>
+                    <h3 class="font-medium text-gray-800 dark:text-gray-100">{{ __('ui.email') }}</h3>
                     <div>carolinmcneail@acme.com</div>
                 </div>
                 <div class="text-sm">
-                    <h3 class="font-medium text-gray-800 dark:text-gray-100">Birthdate</h3>
+                    <h3 class="font-medium text-gray-800 dark:text-gray-100">{{ __('ui.birthdate') }}</h3>
                     <div>4 April, 1987</div>
                 </div>
                 <div class="text-sm">
-                    <h3 class="font-medium text-gray-800 dark:text-gray-100">Joined Acme</h3>
+                    <h3 class="font-medium text-gray-800 dark:text-gray-100">{{ __('ui.joined_acme') }}</h3>
                     <div>7 April, 2017</div>
                 </div>
             </aside>

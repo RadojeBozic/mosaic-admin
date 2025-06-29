@@ -15,7 +15,7 @@
             <div class="text-sm text-gray-500 dark:text-gray-400 italic whitespace-nowrap">{{ \Carbon\Carbon::parse($job->created_at)->format('M j') }}</div>
             <div class="text-xs inline-flex font-medium rounded-full text-center px-2.5 py-1 @if($job->type === 'Featured'){{'bg-yellow-500/20 text-yellow-700'}}@else{{'bg-green-500/20 text-green-700'}}@endif">{{ $job->type }}</div>
             <button class="@if($job->fav){{'text-yellow-500'}}@else{{'text-gray-300 dark:text-gray-600 hover:text-gray-400 dark:hover:text-gray-500'}}@endif">
-                <span class="sr-only">Bookmark</span>
+                <span class="sr-only">Bookmark {{ __('ui.bookmark') }} </span>
                 <svg class="w-3 h-4 fill-current" width="12" height="16" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 0C.9 0 0 .9 0 2v14l6-3 6 3V2c0-1.1-.9-2-2-2H2Z" />
                 </svg>

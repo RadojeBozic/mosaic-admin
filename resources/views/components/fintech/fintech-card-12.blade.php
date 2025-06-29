@@ -3,7 +3,7 @@
         <header>
             <h3 class="text-xs font-semibold text-gray-500 uppercase mb-1"><span class="text-gray-800 dark:text-gray-100">Twtr</span> - Twitter Inc.</h3>
             <div class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-1">$43.07</div>
-            <div class="text-sm"><span class="font-medium text-green-600">+$4,20 (9,2%)</span> - Today</div>
+            <div class="text-sm"><span class="font-medium text-green-600">+$4,20 (9,2%)</span> - {{ __('ui.today') }}</div>
         </header>
     </div>
     <div class="grow">

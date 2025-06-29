@@ -1,13 +1,13 @@
 <div class="col-span-full xl:col-span-6 bg-white dark:bg-gray-800 shadow-xs rounded-xl">
     <header class="px-5 py-4 border-b border-gray-100 dark:border-gray-700/60">
-        <h2 class="font-semibold text-gray-800 dark:text-gray-100">Recent Activity</h2>
+        <h2 class="font-semibold text-gray-800 dark:text-gray-100">{{ __('ui.recent_activity') }}</h2>
     </header>
     <div class="p-3">
 
         <!-- Card content -->
         <!-- "Today" group -->
         <div>
-            <header class="text-xs uppercase text-gray-400 dark:text-gray-500 bg-gray-50 dark:bg-gray-700/50 rounded-xs font-semibold p-2">Today</header>
+            <header class="text-xs uppercase text-gray-400 dark:text-gray-500 bg-gray-50 dark:bg-gray-700/50 rounded-xs font-semibold p-2">{{ __('ui.today') }}</header>
             <ul class="my-1">
                 <!-- Item -->
                 <li class="flex px-2">
@@ -18,9 +18,9 @@
                     </div>
                     <div class="grow flex items-center border-b border-gray-100 dark:border-gray-700/60 text-sm py-2">
                         <div class="grow flex justify-between">
-                            <div class="self-center"><a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Nick Mark</a> mentioned <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Sara Smith</a> in a new post</div>
+                            <div class="self-center"><a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Nick Mark</a> mentioned <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Sara Smith</a>{{ __('ui.in_a_new_post') }}</div>
                             <div class="shrink-0 self-end ml-2">
-                                <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">View<span class="hidden sm:inline"> -&gt;</span></a>
+                                <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">{{ __('ui.view') }} <span class="hidden sm:inline"> -&gt;</span></a>
                             </div>
                         </div>
                     </div>
@@ -34,9 +34,9 @@
                     </div>
                     <div class="grow flex items-center border-b border-gray-100 dark:border-gray-700/60 text-sm py-2">
                         <div class="grow flex justify-between">
-                            <div class="self-center">The post <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Post Name</a> was removed by <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Nick Mark</a></div>
+                            <div class="self-center">{{ __('ui.the_post') }}  <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">{{ __('ui.post_name') }}  </a> {{ __('ui.was_removed_by') }} <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Nick Mark</a></div>
                             <div class="shrink-0 self-end ml-2">
-                                <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">View<span class="hidden sm:inline"> -&gt;</span></a>
+                                <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">{{ __('ui.view') }}<span class="hidden sm:inline"> -&gt;</span></a>
                             </div>
                         </div>
                     </div>
@@ -50,9 +50,9 @@
                     </div>
                     <div class="grow flex items-center text-sm py-2">
                         <div class="grow flex justify-between">
-                            <div class="self-center"><a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Patrick Sullivan</a> published a new <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">post</a></div>
+                            <div class="self-center"><a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Patrick Sullivan</a> published a new  <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">post</a></div>
                             <div class="shrink-0 self-end ml-2">
-                                <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">View<span class="hidden sm:inline"> -&gt;</span></a>
+                                <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">{{ __('ui.view') }} <span class="hidden sm:inline"> -&gt;</span></a>
                             </div>
                         </div>
                     </div>
@@ -74,7 +74,7 @@
                         <div class="grow flex justify-between">
                             <div class="self-center"><a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">240+</a> users have subscribed to <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Newsletter #1</a></div>
                             <div class="shrink-0 self-end ml-2">
-                                <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">View<span class="hidden sm:inline"> -&gt;</span></a>
+                                <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">{{ __('ui.view') }} <span class="hidden sm:inline"> -&gt;</span></a>
                             </div>
                         </div>
                     </div>
@@ -88,9 +88,9 @@
                     </div>
                     <div class="grow flex items-center text-sm py-2">
                         <div class="grow flex justify-between">
-                            <div class="self-center">The post <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Post Name</a> was suspended by <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Nick Mark</a></div>
+                            <div class="self-center">{{ __('ui.the_post') }}  <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">{{ __('ui.post_name') }}  </a> {{ __('ui.was_suspended_by') }} <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Nick Mark</a></div>
                             <div class="shrink-0 self-end ml-2">
-                                <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">View<span class="hidden sm:inline"> -&gt;</span></a>
+                                <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">{{ __('ui.view') }} <span class="hidden sm:inline"> -&gt;</span></a>
                             </div>
                         </div>
                     </div>

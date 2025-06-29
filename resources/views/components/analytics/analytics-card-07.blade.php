@@ -1,14 +1,14 @@
 <div class="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white dark:bg-gray-800 shadow-xs rounded-xl">
     <header class="px-5 py-4 border-b border-gray-100 dark:border-gray-700/60">
-        <h2 class="font-semibold text-gray-800 dark:text-gray-100">Top Countries</h2>
+        <h2 class="font-semibold text-gray-800 dark:text-gray-100">{{ __('ui.top_countries') }}</h2>
     </header>
     <div class="grow p-3">
         <div class="flex flex-col h-full">
             <!-- Card content -->
             <div class="grow">
                 <ul class="flex justify-between text-xs uppercase text-gray-400 dark:text-gray-500 font-semibold px-2 space-x-2">
-                    <li>Source</li>
-                    <li>Sessions</li>
+                    <li>{{ __('ui.source') }}</li>
+                    <li>{{ __('ui.sessions') }}</li>
                 </ul>
 
                 <ul class="space-y-1 text-sm text-gray-800 dark:text-gray-100 mt-3 mb-4">

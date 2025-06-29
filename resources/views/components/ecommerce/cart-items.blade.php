@@ -18,31 +18,31 @@
                         <!-- Stars -->
                         <div class="flex space-x-1">
                             <button>
-                                <span class="sr-only">1 star</span>
+                                <span class="sr-only">1 {{ __('ui.star') }}</span>
                                 <svg class="fill-current text-yellow-500" width="16" height="16" viewBox="0 0 16 16">
                                     <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
                                 </svg>
                             </button>
                             <button>
-                                <span class="sr-only">2 stars</span>
+                                <span class="sr-only">2 {{ __('ui.stars') }}</span>
                                 <svg class="fill-current text-yellow-500" width="16" height="16" viewBox="0 0 16 16">
                                     <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
                                 </svg>
                             </button>
                             <button>
-                                <span class="sr-only">3 stars</span>
+                                <span class="sr-only">3 {{ __('ui.stars') }}</span>
                                 <svg class="fill-current text-yellow-500" width="16" height="16" viewBox="0 0 16 16">
                                     <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
                                 </svg>
                             </button>
                             <button>
-                                <span class="sr-only">4 stars</span>
+                                <span class="sr-only">4 {{ __('ui.stars') }}</span>
                                 <svg class="fill-current text-yellow-500" width="16" height="16" viewBox="0 0 16 16">
                                     <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
                                 </svg>
                             </button>
                             <button>
-                                <span class="sr-only">5 stars</span>
+                                <span class="sr-only">5 {{ __('ui.stars') }}</span>
                                 <svg class="fill-current text-gray-300 dark:text-gray-600" width="16" height="16" viewBox="0 0 16 16">
                                     <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
                                 </svg>
@@ -57,7 +57,7 @@
                         <div class="inline-flex text-sm font-medium bg-green-500/20 text-green-700 rounded-full text-center px-2 py-0.5">$89.00</div>
                     </div>
                 </div>
-                <button class="text-sm underline hover:no-underline">Remove</button>
+                <button class="text-sm underline hover:no-underline">{{ __('ui.remove') }}</button>
             </div>
         </div>
     </li>
@@ -119,7 +119,7 @@
                         <div class="inline-flex text-sm font-medium bg-green-500/20 text-green-700 rounded-full text-center px-2 py-0.5">$89.00</div>
                     </div>
                 </div>
-                <button class="text-sm underline hover:no-underline">Remove</button>
+                <button class="text-sm underline hover:no-underline">{{ __('ui.remove') }}</button>
             </div>
         </div>
     </li>
@@ -142,31 +142,31 @@
                         <!-- Stars -->
                         <div class="flex space-x-1">
                             <button>
-                                <span class="sr-only">1 star</span>
+                                <span class="sr-only">1 {{ __('ui.star') }}</span>
                                 <svg class="fill-current text-yellow-500" width="16" height="16" viewBox="0 0 16 16">
                                     <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
                                 </svg>
                             </button>
                             <button>
-                                <span class="sr-only">2 stars</span>
+                                <span class="sr-only">2 {{ __('ui.stars') }}</span>
                                 <svg class="fill-current text-yellow-500" width="16" height="16" viewBox="0 0 16 16">
                                     <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
                                 </svg>
                             </button>
                             <button>
-                                <span class="sr-only">3 stars</span>
+                                <span class="sr-only">3 {{ __('ui.stars') }}</span>
                                 <svg class="fill-current text-yellow-500" width="16" height="16" viewBox="0 0 16 16">
                                     <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
                                 </svg>
                             </button>
                             <button>
-                                <span class="sr-only">4 stars</span>
+                                <span class="sr-only">4 {{ __('ui.stars') }}</span>
                                 <svg class="fill-current text-yellow-500" width="16" height="16" viewBox="0 0 16 16">
                                     <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
                                 </svg>
                             </button>
                             <button>
-                                <span class="sr-only">5 stars</span>
+                                <span class="sr-only">5 {{ __('ui.stars') }}</span>
                                 <svg class="fill-current text-gray-300 dark:text-gray-600" width="16" height="16" viewBox="0 0 16 16">
                                     <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
                                 </svg>
@@ -181,12 +181,12 @@
                         <div class="inline-flex text-sm font-medium bg-green-500/20 text-green-700 rounded-full text-center px-2 py-0.5">$89.00</div>
                     </div>
                 </div>
-                <button class="text-sm underline hover:no-underline">Remove</button>
+                <button class="text-sm underline hover:no-underline">{{ __('ui.remove') }}</button>
             </div>
         </div>
     </li>
 </ul>
 
 <div class="mt-6 text-center lg:text-left">
-    <a class="text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">&lt;- Back To Shopping</a>
+    <a class="text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">&lt;- {{ __('ui.back_to_shopping') }}</a>
 </div>

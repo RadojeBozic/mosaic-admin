@@ -31,7 +31,7 @@
                         @click.prevent="open = !open"
                         :aria-expanded="open"
                     >
-                        <span class="sr-only">Menu</span>
+                        <span class="sr-only">{{ __('ui.menu') }}</span>
                         <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
                             <circle cx="16" cy="16" r="2" />
                             <circle cx="10" cy="16" r="2" />
@@ -53,13 +53,13 @@
                     >
                         <ul>
                             <li>
-                                <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Option 1</a>
+                                <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.option_1') }}</a>
                             </li>
                             <li>
-                                <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Option 2</a>
+                                <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.option_2') }}</a>
                             </li>
                             <li>
-                                <a class="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Remove</a>
+                                <a class="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.remove') }}</a>
                             </li>
                         </ul>
                     </div>
@@ -78,7 +78,7 @@
                         <svg class="fill-current shrink-0 mr-2" width="16" height="16" viewBox="0 0 16 16">
                             <path d="M8 0C3.6 0 0 3.1 0 7s3.6 7 8 7h.6l5.4 2v-4.4c1.2-1.2 2-2.8 2-4.6 0-3.9-3.6-7-8-7zm4 10.8v2.3L8.9 12H8c-3.3 0-6-2.2-6-5s2.7-5 6-5 6 2.2 6 5c0 2.2-2 3.8-2 3.8z" />
                         </svg>
-                        <span>Send Email</span>
+                        <span>{{ __('ui.send_email') }}</span>
                     </div>
                 </a>
                 <a class="block flex-1 text-center text-sm text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-200 font-medium px-3 py-4 group" href="{{ route('account') }}">
@@ -86,7 +86,7 @@
                         <svg class="fill-current text-gray-400 dark:text-gray-600 group-hover:text-gray-500 shrink-0 mr-2" width="16" height="16" viewBox="0 0 16 16">
                             <path d="M11.7.3c-.4-.4-1-.4-1.4 0l-10 10c-.2.2-.3.4-.3.7v4c0 .6.4 1 1 1h4c.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4l-4-4zM4.6 14H2v-2.6l6-6L10.6 8l-6 6zM12 6.6L9.4 4 11 2.4 13.6 5 12 6.6z" />
                         </svg>
-                        <span>Edit Profile</span>
+                        <span>{{ __('ui.edit_profile') }}</span>
                     </div>
                 </a>
             </div>

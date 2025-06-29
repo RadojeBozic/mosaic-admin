@@ -1,6 +1,6 @@
 <div class="flex flex-col col-span-full xl:col-span-4 bg-white dark:bg-gray-800 shadow-xs rounded-xl">
     <header class="px-5 py-4 border-b border-gray-100 dark:border-gray-700/60">
-        <h2 class="font-semibold text-gray-800 dark:text-gray-100">Active Users Right Now</h2>
+        <h2 class="font-semibold text-gray-800 dark:text-gray-100">{{ __('ui.active_users') }}</h2>
     </header>
     <div class="flex flex-col h-full">
         <div class="px-5 py-3">
@@ -11,7 +11,7 @@
                 </div>
                 <div>
                     <div class="text-3xl font-bold text-gray-800 dark:text-gray-100 mr-2">347</div>
-                    <div class="text-sm text-gray-500 dark:text-gray-400">Live visitors</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">{{ __('ui.live_visitors') }}</div>
                 </div>
             </div>
         </div>
@@ -24,10 +24,10 @@
                     <thead class="text-xs uppercase text-gray-400 dark:text-gray-500">
                     <tr>
                         <th class="py-2">
-                            <div class="font-semibold text-left">Top pages</div>
+                            <div class="font-semibold text-left">{{ __('ui.top_pages') }}</div>
                         </th>
                         <th class="py-2">
-                            <div class="font-semibold text-right">Active users</div>
+                            <div class="font-semibold text-right">{{ __('ui.active_users') }}</div>
                         </th>
                     </tr>
                     </thead>
@@ -68,6 +68,6 @@
                 </table>
             </div>
         </div>
-        <div class="text-right px-5 pb-4"><a class="text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">Real-Time Report -&gt;</a></div>
+        <div class="text-right px-5 pb-4"><a class="text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">{{ __('ui.real_time_report') }} -&gt;</a></div>
     </div>
 </div>

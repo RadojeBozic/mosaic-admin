@@ -21,7 +21,7 @@
                 
                 <!-- Block 1 -->
                 <div class="bg-white dark:bg-gray-800 p-4 rounded-xl">
-                    <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase mb-4">Top Communities</div>
+                    <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase mb-4">{{ __('ui.top_communities') }}</div>
                     <ul class="space-y-3">
                         <li>
                             <div class="flex items-center justify-between">
@@ -30,10 +30,10 @@
                                         <img class="w-8 h-8 rounded-full" src="{{ asset('images/group-avatar-01.png') }}" width="32" height="32" alt="Group 01" />
                                     </div>
                                     <div class="truncate">
-                                        <span class="text-sm font-medium text-gray-800 dark:text-gray-100">Introductions</span>
+                                        <span class="text-sm font-medium text-gray-800 dark:text-gray-100">{{ __('ui.introductions') }}</span>
                                     </div>
                                 </div>
-                                <button class="btn-xs text-xs border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300 px-2.5 py-1 rounded-full shadow-none">Join</button>
+                                <button class="btn-xs text-xs border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300 px-2.5 py-1 rounded-full shadow-none">{{ __('ui.join') }}</button>
                             </div>
                         </li>
                         <li>
@@ -43,10 +43,10 @@
                                         <img class="w-8 h-8 rounded-full" src="{{ asset('images/group-avatar-02.png') }}" width="32" height="32" alt="Group 02" />
                                     </div>
                                     <div class="truncate">
-                                        <span class="text-sm font-medium text-gray-800 dark:text-gray-100">HackerNews</span>
+                                        <span class="text-sm font-medium text-gray-800 dark:text-gray-100">{{ __('ui.hacker_news') }}</span>
                                     </div>
                                 </div>
-                                <button class="btn-xs text-xs border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300 px-2.5 py-1 rounded-full shadow-none">Join</button>
+                                <button class="btn-xs text-xs border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300 px-2.5 py-1 rounded-full shadow-none">{{ __('ui.join') }}</button>
                             </div>
                         </li>
                         <li>
@@ -73,21 +73,21 @@
                                         <img class="w-8 h-8 rounded-full" src="{{ asset('images/group-avatar-04.png') }}" width="32" height="32" alt="Group 04" />
                                     </div>
                                     <div class="truncate">
-                                        <span class="text-sm font-medium text-gray-800 dark:text-gray-100">JustChatting</span>
+                                        <span class="text-sm font-medium text-gray-800 dark:text-gray-100">JustChatting </span>
                                     </div>
                                 </div>
-                                <button class="btn-xs text-xs border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300 px-2.5 py-1 rounded-full shadow-none">Join</button>
+                                <button class="btn-xs text-xs border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300 px-2.5 py-1 rounded-full shadow-none">{{ __('ui.group') }}</button>
                             </div>
                         </li>
                     </ul>
                     <div class="mt-4">
-                        <button class="btn-sm w-full bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300">View All</button>
+                        <button class="btn-sm w-full bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300"> {{ __('ui.view_all') }}</button>
                     </div>
                 </div>
 
                 <!-- Block 2 -->
                 <div class="bg-white dark:bg-gray-800 p-4 rounded-xl">
-                    <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase mb-4">Who to follow</div>
+                    <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase mb-4">Who to follow </div>
                     <ul class="space-y-3">
                         <li>
                             <div class="flex items-center justify-between">
@@ -99,7 +99,7 @@
                                         <span class="text-sm font-medium text-gray-800 dark:text-gray-100">Elly Boutin</span>
                                     </div>
                                 </div>
-                                <button class="btn-xs text-xs border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300 px-2.5 py-1 rounded-full shadow-none">Follow</button>
+                                <button class="btn-xs text-xs border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300 px-2.5 py-1 rounded-full shadow-none">{{ __('ui.follow') }} </button>
                             </div>
                         </li>
                         <li>
@@ -112,7 +112,7 @@
                                         <span class="text-sm font-medium text-gray-800 dark:text-gray-100">Rich Harris</span>
                                     </div>
                                 </div>
-                                <button class="btn-xs text-xs border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300 px-2.5 py-1 rounded-full shadow-none">Follow</button>
+                                <button class="btn-xs text-xs border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300 px-2.5 py-1 rounded-full shadow-none">{{ __('ui.follow') }}</button>
                             </div>
                         </li>
                         <li>
@@ -125,7 +125,7 @@
                                         <span class="text-sm font-medium text-gray-800 dark:text-gray-100">Mary Porzio</span>
                                     </div>
                                 </div>
-                                <button class="btn-xs text-xs border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300 px-2.5 py-1 rounded-full shadow-none">Follow</button>
+                                <button class="btn-xs text-xs border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300 px-2.5 py-1 rounded-full shadow-none">{{ __('ui.follow') }}</button>
                             </div>
                         </li>
                         <li>
@@ -138,12 +138,12 @@
                                         <span class="text-sm font-medium text-gray-800 dark:text-gray-100">Brian Lovin</span>
                                     </div>
                                 </div>
-                                <button class="btn-xs text-xs border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300 px-2.5 py-1 rounded-full shadow-none">Follow</button>
+                                <button class="btn-xs text-xs border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300 px-2.5 py-1 rounded-full shadow-none">{{ __('ui.follow') }}</button>
                             </div>
                         </li>
                     </ul>
                     <div class="mt-4">
-                        <button class="btn-sm w-full bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300">View All</button>
+                        <button class="btn-sm w-full bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300">{{ __('ui.view_all') }}</button>
                     </div>
                 </div>
 
@@ -155,35 +155,35 @@
                             <div class="text-sm mb-1">
                                 <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Tracking your website traffic on launch day 📈</a>
                             </div>
-                            <div class="text-xs text-gray-500">248 comments</div>
+                            <div class="text-xs text-gray-500">248 {{ __('ui.comments') }}</div>
                         </li>
                         <li>
                             <div class="text-sm mb-1">
                                 <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Freemium model questions</a>
                             </div>
-                            <div class="text-xs text-gray-500">47 comments</div>
+                            <div class="text-xs text-gray-500">47 {{ __('ui.comments') }}</div>
                         </li>
                         <li>
                             <div class="text-sm mb-1">
                                 <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Slack and Community</a>
                             </div>
-                            <div class="text-xs text-gray-500">24 comments</div>
+                            <div class="text-xs text-gray-500">24 {{ __('ui.comments') }}</div>
                         </li>
                         <li>
                             <div class="text-sm mb-1">
                                 <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Who owns user onboarding in your company?</a>
                             </div>
-                            <div class="text-xs text-gray-500">17 comments</div>
+                            <div class="text-xs text-gray-500">17 {{ __('ui.comments') }}</div>
                         </li>
                         <li>
                             <div class="text-sm mb-1">
                                 <a class="font-medium text-gray-800 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white" href="#0">Questions from a very confused Web3 startup founder 🤔</a>
                             </div>
-                            <div class="text-xs text-gray-500">9 comments</div>
+                            <div class="text-xs text-gray-500">9 {{ __('ui.comments') }}</div>
                         </li>
                     </ul>
                     <div class="mt-4">
-                        <button class="btn-sm w-full bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300">View All</button>
+                        <button class="btn-sm w-full bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300">{{ __('ui.view_all') }}</button>
                     </div>
                 </div>
 

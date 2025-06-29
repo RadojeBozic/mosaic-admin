@@ -21,7 +21,7 @@
                             >
                                 <img class="w-8 h-8 rounded-full mr-2" src="{{ asset('images/channel-01.png') }}" width="32" height="32" alt="Group 01" />
                                 <div class="truncate">
-                                    <span class="font-semibold text-gray-800 dark:text-gray-100">#Marketing</span>
+                                    <span class="font-semibold text-gray-800 dark:text-gray-100"># {{ __('ui.marketing') }}</span>
                                 </div>
                                 <svg class="w-3 h-3 shrink-0 ml-1 fill-current text-gray-400 dark:text-gray-500" viewBox="0 0 12 12">
                                     <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z" />
@@ -46,7 +46,7 @@
                                             <div class="flex items-center justify-between">
                                                 <div class="grow flex items-center truncate">
                                                     <img class="w-7 h-7 rounded-full mr-2" src="{{ asset('images/channel-01.png') }}" width="28" height="28" alt="Channel 01" />
-                                                    <div class="truncate">#Marketing</div>
+                                                    <div class="truncate">#{{ __('ui.marketing') }}</div>
                                                 </div>
                                                 <svg class="w-3 h-3 shrink-0 fill-current text-violet-500 ml-1" viewBox="0 0 12 12">
                                                     <path d="M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z" />
@@ -59,7 +59,7 @@
                                             <div class="flex items-center justify-between">
                                                 <div class="grow flex items-center truncate">
                                                     <img class="w-7 h-7 rounded-full mr-2" src="{{ asset('images/channel-02.png') }}" width="28" height="28" alt="Channel 02" />
-                                                    <div class="truncate">#Developing</div>
+                                                    <div class="truncate">#{{ __('ui.developing') }}</div>
                                                 </div>
                                             </div>
                                         </a>
@@ -69,7 +69,7 @@
                                             <div class="flex items-center justify-between">
                                                 <div class="grow flex items-center truncate">
                                                     <img class="w-7 h-7 rounded-full mr-2" src="{{ asset('images/channel-03.png') }}" width="28" height="28" alt="Channel 03" />
-                                                    <div class="truncate">#ProductSupport</div>
+                                                    <div class="truncate">#{{ __('ui.product_support') }}</div>
                                                 </div>
                                             </div>
                                         </a>
@@ -90,7 +90,7 @@
             <div class="px-5 py-4">
                 <!-- Search form -->
                 <form class="relative">
-                    <label for="msg-search" class="sr-only">Search</label>
+                    <label for="msg-search" class="sr-only">{{ __('ui.search') }}</label>
                     <input id="msg-search" class="form-input w-full pl-9 bg-white dark:bg-gray-800" type="search" placeholder="Search…" />
                     <button class="absolute inset-0 right-auto group" type="submit" aria-label="Search">
                         <svg class="shrink-0 fill-current text-gray-400 dark:text-gray-500 group-hover:text-gray-500 dark:group-hover:text-gray-400 ml-3 mr-2" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -101,7 +101,7 @@
                 </form>
                 <!-- Direct messages -->
                 <div class="mt-4">
-                    <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase mb-3">Direct messages</div>
+                    <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase mb-3">{{ __('ui.direct_messages') }}</div>
                     <ul class="mb-6">
                         <li class="-mx-2">
                             <button class="flex items-center justify-between w-full p-2 rounded-lg bg-linear-to-r from-violet-500/[0.12] dark:from-violet-500/[0.24] to-violet-500/[0.04]" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
@@ -191,13 +191,13 @@
                 </div>
                 <!-- Channels -->
                 <div class="mt-4">
-                    <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase mb-3">Channels</div>
+                    <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase mb-3">{{ __('ui.channels') }}</div>
                     <ul class="mb-6">
                         <li class="-mx-2">
                             <button class="flex items-center justify-between w-full p-2 rounded-sm" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
                                 <div class="flex items-center">
                                     <div class="truncate">
-                                        <span class="text-sm font-medium text-gray-800 dark:text-gray-100">#New Leads</span>
+                                        <span class="text-sm font-medium text-gray-800 dark:text-gray-100"># {{ __('ui.new_leads') }}</span>
                                     </div>
                                 </div>
                                 <div class="flex items-center ml-2">
@@ -209,7 +209,7 @@
                             <button class="flex items-center justify-between w-full p-2 rounded-sm" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
                                 <div class="flex items-center truncate">
                                     <div class="truncate">
-                                        <span class="text-sm font-medium text-gray-800 dark:text-gray-100">#Development Team</span>
+                                        <span class="text-sm font-medium text-gray-800 dark:text-gray-100"># {{ __('ui.development_team') }}</span>
                                     </div>
                                 </div>
                             </button>
@@ -218,7 +218,7 @@
                             <button class="flex items-center justify-between w-full p-2 rounded-sm" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
                                 <div class="flex items-center truncate">
                                     <div class="truncate">
-                                        <span class="text-sm font-medium text-gray-800 dark:text-gray-100">#Product Tips</span>
+                                        <span class="text-sm font-medium text-gray-800 dark:text-gray-100"># {{ __('ui.product_tips') }}</span>
                                     </div>
                                 </div>
                             </button>

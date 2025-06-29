@@ -43,7 +43,7 @@
                 <svg class="shrink-0 mr-2 fill-current text-violet-500" :class="selected !== 0 && 'invisible'" width="12" height="9" viewBox="0 0 12 9">
                     <path d="M10.28.28L3.989 6.575 1.695 4.28A1 1 0 00.28 5.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28.28z" />
                 </svg>
-                <span>Today</span>
+                <span>{{ __('ui.today') }}</span>
             </button>
             <button
                 tabindex="0"
@@ -56,7 +56,7 @@
                 <svg class="shrink-0 mr-2 fill-current text-violet-500" :class="selected !== 1 && 'invisible'" width="12" height="9" viewBox="0 0 12 9">
                     <path d="M10.28.28L3.989 6.575 1.695 4.28A1 1 0 00.28 5.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28.28z" />
                 </svg>
-                <span>Last 7 Days</span>
+                <span>{{ __('ui.last_7_days') }}</span>
             </button>
             <button
                 tabindex="0"
@@ -69,7 +69,7 @@
                 <svg class="shrink-0 mr-2 fill-current text-violet-500" :class="selected !== 2 && 'invisible'" width="12" height="9" viewBox="0 0 12 9">
                     <path d="M10.28.28L3.989 6.575 1.695 4.28A1 1 0 00.28 5.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28.28z" />
                 </svg>
-                <span>Last Month</span>
+                <span>{{ __('ui.last_month') }}</span>
             </button>
             <button
                 tabindex="0"
@@ -82,7 +82,7 @@
                 <svg class="shrink-0 mr-2 fill-current text-violet-500" :class="selected !== 3 && 'invisible'" width="12" height="9" viewBox="0 0 12 9">
                     <path d="M10.28.28L3.989 6.575 1.695 4.28A1 1 0 00.28 5.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28.28z" />
                 </svg>
-                <span>Last 12 Months</span>
+                <span>{{ __('ui.last_12_months') }}</span>
             </button>
             <button
                 tabindex="0"
@@ -95,7 +95,7 @@
                 <svg class="shrink-0 mr-2 fill-current text-violet-500" :class="selected !== 4 && 'invisible'" width="12" height="9" viewBox="0 0 12 9">
                     <path d="M10.28.28L3.989 6.575 1.695 4.28A1 1 0 00.28 5.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28.28z" />
                 </svg>
-                <span>All Time</span>
+                <span>{{ __('ui.all_time') }}</span>
             </button>
         </div>
     </div>

@@ -3,7 +3,7 @@
         <header>
             <h3 class="text-sm font-semibold text-gray-500 uppercase mb-1"><span class="text-gray-800 dark:text-gray-100">Amzn</span> - Amazon Inc.</h3>
             <div class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-1">$3,400.35</div>
-            <div class="text-sm"><span class="font-medium text-green-600">+$142 (3,7%)</span> - Today</div>
+            <div class="text-sm"><span class="font-medium text-green-600">+$142 (3,7%)</span> - {{ __('ui.today') }}</div>
         </header>
     </div>
     <div class="grow">

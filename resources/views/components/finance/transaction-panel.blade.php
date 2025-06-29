@@ -17,7 +17,7 @@
         <div class="py-8 px-4 lg:px-8">
             <div class="max-w-sm mx-auto lg:max-w-none">
 
-                <div class="text-gray-800 dark:text-gray-100 font-semibold text-center mb-1">Bank Transfer</div>
+                <div class="text-gray-800 dark:text-gray-100 font-semibold text-center mb-1">{{ __('ui.bank_transfer') }}</div>
                 <div class="text-sm text-center italic">22/01/2024, 8:56 PM</div>
 
                 <!-- Details -->
@@ -29,7 +29,7 @@
                         </div>
                         <div class="text-2xl font-semibold text-green-500 mb-1">+$2,179.36</div>
                         <div class="text-sm font-medium text-gray-800 dark:text-gray-100 mb-3">Acme LTD UK</div>
-                        <div class="text-xs inline-flex font-medium bg-gray-400/20 text-gray-500 dark:text-gray-400 rounded-full text-center px-2.5 py-1">Pending</div>
+                        <div class="text-xs inline-flex font-medium bg-gray-400/20 text-gray-500 dark:text-gray-400 rounded-full text-center px-2.5 py-1">{{ __('ui.pending') }}</div>
                     </div>
                     <!-- Divider -->
                     <div class="flex justify-between items-center" aria-hidden="true">
@@ -55,7 +55,7 @@
                         </div>
                         <div class="flex justify-between space-x-1">
                             <span class="italic">Reference:</span>
-                            <span class="font-medium text-gray-700 dark:text-gray-100 text-right">Freelance Work</span>
+                            <span class="font-medium text-gray-700 dark:text-gray-100 text-right">Freelance Work {{ __('ui.freelance_work') }}</span>
                         </div>
                         <div class="flex justify-between space-x-1">
                             <span class="italic">Emitter:</span>
@@ -66,22 +66,22 @@
 
                 <!-- Receipts -->
                 <div class="mt-6">
-                    <div class="text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">Receipts</div>
+                    <div class="text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">Receipts {{ __('ui.receipts') }}</div>
                     <form class="rounded-sm bg-gray-100 dark:bg-gray-700/30 border border-dashed border-gray-300 dark:border-gray-700/60 text-center px-5 py-8">
                         <svg class="inline-flex fill-gray-400 dark:fill-gray-500 mb-3" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8 4c-.3 0-.5.1-.7.3L1.6 10 3 11.4l4-4V16h2V7.4l4 4 1.4-1.4-5.7-5.7C8.5 4.1 8.3 4 8 4ZM1 2h14V0H1v2Z" />
                         </svg>
-                        <label for="upload" class="block text-sm text-gray-500 dark:text-gray-400 italic">We accept PNG, JPEG, and PDF files.</label>
+                        <label for="upload" class="block text-sm text-gray-500 dark:text-gray-400 italic">{{ __('ui.we_accept') }} {{ __('ui.png') }}, {{ __('ui.jpeg') }}, {{ __('ui.and') }} {{ __('ui.pdf') }} {{ __('ui.files') }}.</label>
                         <input class="sr-only" id="upload" type="file" />
                     </form>
                 </div>
 
                 <!-- Notes -->
                 <div class="mt-6">
-                    <div class="text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">Notes</div>
+                    <div class="text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">Notes {{ __('ui.notes') }}</div>
                     <form>
-                        <label class="sr-only" for="notes">Write a note</label>
-                        <textarea id="notes" class="form-textarea w-full focus:border-gray-300" rows="4" placeholder="Write a note…"></textarea>
+                        <label class="sr-only" for="notes">{{ __('ui.write_a_note') }}</label>
+                        <textarea id="notes" class="form-textarea w-full focus:border-gray-300" rows="4" placeholder="{{ __('ui.write_a_note') }}…"></textarea>
                     </form>
                 </div>
 
@@ -92,7 +92,7 @@
                             <svg class="fill-current text-gray-400 dark:text-gray-500 shrink-0 rotate-180" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8 4c-.3 0-.5.1-.7.3L1.6 10 3 11.4l4-4V16h2V7.4l4 4 1.4-1.4-5.7-5.7C8.5 4.1 8.3 4 8 4ZM1 2h14V0H1v2Z" />
                             </svg>
-                            <span class="ml-2">Download</span>
+                            <span class="ml-2">{{ __('ui.download') }}</span>
                         </button>
                     </div>
                     <div class="w-1/2">
@@ -100,7 +100,7 @@
                             <svg class="fill-current shrink-0" width="16" height="16" viewBox="0 0 16 16">
                                 <path d="M7.001 3h2v4h-2V3Zm1 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM15 16a1 1 0 0 1-.6-.2L10.667 13H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1ZM2 11h9a1 1 0 0 1 .6.2L14 13V2H2v9Z" />
                             </svg>
-                            <span class="ml-2">Report</span>
+                            <span class="ml-2">{{ __('ui.report') }}</span>
                         </button>
                     </div>
                 </div>

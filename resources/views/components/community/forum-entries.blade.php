@@ -27,7 +27,7 @@
                     <span class="text-gray-500">7d</span>
                 </div>
                 <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                    <span class="text-gray-500">688 Comments</span>
+                    <span class="text-gray-500">688 {{ __('ui.comments') }}</span>
                 </div>
             </footer>
         </div>
@@ -65,7 +65,7 @@
                     <span class="text-gray-500">4h</span>
                 </div>
                 <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                    <span class="text-gray-500">14 Comments</span>
+                    <span class="text-gray-500">14 {{ __('ui.comments') }}</span>
                 </div>
             </footer>
         </div>
@@ -97,13 +97,13 @@
             <!-- Footer -->
             <footer class="flex flex-wrap text-sm">
                 <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                    <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">katemerlu</a>
+                    <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">katemerlu </a>
                 </div>
                 <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
                     <span class="text-gray-500">2h</span>
                 </div>
                 <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                    <span class="text-gray-500">17 Comments</span>
+                    <span class="text-gray-500">17 {{ __('ui.comments') }}</span>
                 </div>
             </footer>
         </div>
@@ -141,7 +141,7 @@
                     <span class="text-gray-500">2d</span>
                 </div>
                 <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                    <span class="text-gray-500">298 Comments</span>
+                    <span class="text-gray-500">298 {{ __('ui.comments') }}</span>
                 </div>
             </footer>
         </div>
@@ -179,7 +179,7 @@
                     <span class="text-gray-500">2d</span>
                 </div>
                 <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                    <span class="text-gray-500">312 Comments</span>
+                    <span class="text-gray-500">312 {{ __('ui.comments') }}</span>
                 </div>
             </footer>
         </div>
@@ -214,7 +214,7 @@
                     <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">crypto.io</a>
                 </div>
                 <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                    <span class="text-gray-500 italic">Promoted</span>
+                    <span class="text-gray-500 italic">Promoted {{ __('ui.promoted') }}</span>
                 </div>
             </footer>
         </div>
@@ -243,7 +243,7 @@
                     <span class="text-gray-500">3d</span>
                 </div>
                 <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                    <span class="text-gray-500">66 Comments</span>
+                    <span class="text-gray-500">66 {{ __('ui.comments') }}</span>
                 </div>
             </footer>
         </div>
@@ -275,13 +275,13 @@
             <!-- Footer -->
             <footer class="flex flex-wrap text-sm">
                 <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                    <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">molliehacks</a>
+                    <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">molliehacks </a>
                 </div>
                 <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
                     <span class="text-gray-500">3d</span>
                 </div>
                 <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                    <span class="text-gray-500">32 Comments</span>
+                    <span class="text-gray-500">32 {{ __('ui.comments') }}</span>
                 </div>
             </footer>
         </div>
@@ -319,7 +319,7 @@
                     <span class="text-gray-500">4d</span>
                 </div>
                 <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                    <span class="text-gray-500">27 Comments</span>
+                    <span class="text-gray-500">27 {{ __('ui.comments') }}</span>
                 </div>
             </footer>
         </div>
@@ -357,7 +357,7 @@
                     <span class="text-gray-500">5d</span>
                 </div>
                 <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                    <span class="text-gray-500">61 Comments</span>
+                    <span class="text-gray-500">61 {{ __('ui.comments') }}</span>
                 </div>
             </footer>
         </div>

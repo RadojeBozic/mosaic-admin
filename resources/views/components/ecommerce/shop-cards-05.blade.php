@@ -5,7 +5,7 @@
             <div class="inline-flex mb-2">
                 <img class="rounded-full" src="{{asset('images/shop-category-01.png') }}" width="48" height="48" alt="Merchandise" />
             </div>
-            <h3 class="text-lg text-gray-800 dark:text-gray-100 font-semibold mb-1">Merchandise</h3>
+            <h3 class="text-lg text-gray-800 dark:text-gray-100 font-semibold mb-1">Merchandise  </h3>
         </div>
         <div>
             <a class="text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">Explore -&gt;</a>

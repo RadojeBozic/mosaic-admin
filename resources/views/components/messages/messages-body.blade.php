@@ -15,7 +15,7 @@
                     aria-controls="messages-sidebar"
                     :aria-expanded="msgSidebarOpen"
                 >
-                    <span class="sr-only">Close sidebar</span>
+                    <span class="sr-only">{{ __('ui.close_sidebar') }} </span>
                     <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.7 18.7l1.4-1.4L7.8 13H20v-2H7.8l4.3-4.3-1.4-1.4L4 12z" />
                     </svg>
@@ -83,7 +83,7 @@
                 <div class="flex items-center">
                     <img class="rounded-lg shadow-xs mb-1" src="{{ asset('images/chat-image.jpg') }}" width="240" height="180" alt="Chat image" />
                     <button class="p-1.5 rounded-full border border-gray-200 dark:border-gray-700/60 ml-4 hover:bg-white dark:hover:bg-gray-800 transition">
-                        <span class="sr-only">Download</span>
+                        <span class="sr-only">Download {{ __('ui.download') }}</span>
                         <svg class="shrink-0 fill-current text-gray-400 dark:text-gray-500" width="16" height="16" viewBox="0 0 16 16">
                             <path d="M15 15H1a1 1 0 01-1-1V2a1 1 0 011-1h4v2H2v10h12V3h-3V1h4a1 1 0 011 1v12a1 1 0 01-1 1zM9 7h3l-4 4-4-4h3V1h2v6z" />
                         </svg>
@@ -99,7 +99,7 @@
             <img class="rounded-full mr-4" src="{{ asset('images/user-40-11.jpg') }}" width="40" height="40" alt="User 01" />
             <div>
                 <div class="text-sm bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-100 p-3 rounded-lg rounded-tl-none mb-1">
-                    What do you think? Duis aute irure dolor in reprehenderit 🔥
+                    What do you think? Duis aute irure dolor in reprehenderit  🔥
                 </div>
                 <div class="flex items-center justify-between">
                     <div class="text-xs text-gray-500 font-medium">2:48 PM</div>
@@ -169,7 +169,7 @@
         <div class="flex items-center justify-between bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700/60 px-4 sm:px-6 md:px-5 h-16">
             <!-- Plus button -->
             <button class="shrink-0 text-gray-400 dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-400 mr-3">
-                <span class="sr-only">Add</span>
+                <span class="sr-only">{{ __('ui.add') }}</span>
                 <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                     <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12C23.98 5.38 18.62.02 12 0zm6 13h-5v5h-2v-5H6v-2h5V6h2v5h5v2z" />
                 </svg>
@@ -177,7 +177,7 @@
             <!-- Message input -->
             <form class="grow flex">
                 <div class="grow mr-3">
-                    <label for="message-input" class="sr-only">Type a message</label>
+                    <label for="message-input" class="sr-only">Type a message {{ __('ui.type_a_message') }}</label>
                     <input id="message-input" class="form-input w-full bg-gray-100 dark:bg-gray-800 border-transparent dark:border-transparent focus:bg-white dark:focus:bg-gray-800 placeholder-gray-500" type="text" placeholder="Aa" />
                 </div>
                 <button type="submit" class="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white whitespace-nowrap">Send -&gt;</button>

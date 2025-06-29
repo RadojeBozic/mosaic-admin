@@ -22,7 +22,7 @@
                     @click.prevent="open = !open"
                     :aria-expanded="open"
                 >
-                    <span class="sr-only">Menu</span>
+                    <span class="sr-only">{{ __('ui.menu') }}</span>
                     <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
                         <circle cx="16" cy="16" r="2" />
                         <circle cx="10" cy="16" r="2" />
@@ -44,13 +44,13 @@
                 >
                     <ul>
                         <li>
-                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Option 1</a>
+                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.option_1') }}</a>
                         </li>
                         <li>
-                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Option 2</a>
+                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.option_2') }}</a>
                         </li>
                         <li>
-                            <a class="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Remove</a>
+                            <a class="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.remove') }}</a>
                         </li>
                     </ul>
                 </div>
@@ -61,7 +61,7 @@
     <div class="text-sm text-gray-800 dark:text-gray-100 space-y-2 mb-5">
         <p>👋</p>
         <p>It's more likely that people reading your blog will opt in with their email addresses if you give them something highly relevant in return. Ditch that too-general lead magnet and create "content upgrades" for your highest-traffic articles.</p>
-        <p>Thread 👇</p>
+        <p>Thread  👇</p>
     </div>
     <!-- Footer -->
     <footer class="flex items-center space-x-4">
@@ -104,7 +104,7 @@
                     <svg class="w-3 h-3 shrink-0 fill-yellow-500 mr-1" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.953 4.29a.5.5 0 0 0-.454-.29H6.14L6.984.62A.5.5 0 0 0 6.12.174l-6 7A.5.5 0 0 0 .499 8h5.359l-.844 3.38a.5.5 0 0 0 .864.445l6-7a.5.5 0 0 0 .075-.534Z" />
                     </svg>
-                    <div class="text-xs text-gray-500">Sponsored</div>
+                    <div class="text-xs text-gray-500">{{ __('ui.sponsored') }} </div>
                 </div>
             </div>
         </div>
@@ -118,7 +118,7 @@
                     @click.prevent="open = !open"
                     :aria-expanded="open"
                 >
-                    <span class="sr-only">Menu</span>
+                    <span class="sr-only">{{ __('ui.menu') }}</span>
                     <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
                         <circle cx="16" cy="16" r="2" />
                         <circle cx="10" cy="16" r="2" />
@@ -140,13 +140,13 @@
                 >
                     <ul>
                         <li>
-                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Option 1</a>
+                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.option_1') }}</a>
                         </li>
                         <li>
-                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Option 2</a>
+                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.option_2') }}</a>
                         </li>
                         <li>
-                            <a class="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Remove</a>
+                            <a class="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.remove') }}</a>
                         </li>
                     </ul>
                 </div>
@@ -155,13 +155,13 @@
     </header>
     <!-- Body -->
     <div class="text-sm text-gray-800 dark:text-gray-100 space-y-2 mb-5">
-        <p>Designing an Earth-positive future, together 🌿</p>
+        <p>Designing an Earth-positive future, together  🌿</p>
         <div class="relative my-4!">
             <img class="block w-full" src="{{ asset('images/feed-image-01.jpg') }}" width="590" height="332" alt="Feed 01" />
             <div class="absolute left-0 right-0 bottom-0 p-4 bg-black/25 backdrop-blur-md">
                 <div class="flex items-center justify-between">
                     <div class="text-xs font-medium text-gray-300">togethernature.com</div>
-                    <a class="text-xs font-medium text-violet-400 hover:text-violet-300" href="#0">Learn More -&gt;</a>
+                    <a class="text-xs font-medium text-violet-400 hover:text-violet-300" href="#0">{{ __('ui.learn-more') }}  -&gt;</a>
                 </div>
             </div>
         </div>
@@ -216,7 +216,7 @@
                     @click.prevent="open = !open"
                     :aria-expanded="open"
                 >
-                    <span class="sr-only">Menu</span>
+                    <span class="sr-only">{{ __('ui.menu') }}</span>
                     <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
                         <circle cx="16" cy="16" r="2" />
                         <circle cx="10" cy="16" r="2" />
@@ -238,13 +238,13 @@
                 >
                     <ul>
                         <li>
-                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Option 1</a>
+                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.option_1') }}</a>
                         </li>
                         <li>
-                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Option 2</a>
+                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.option_2') }}</a>
                         </li>
                         <li>
-                            <a class="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Remove</a>
+                            <a class="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.remove') }}</a>
                         </li>
                     </ul>
                 </div>
@@ -309,15 +309,15 @@
         </ul>
         <!-- Comments footer -->
         <div class="flex justify-between space-x-2">
-            <div class="text-sm text-gray-500 dark:text-gray-400"><span class="font-medium text-gray-600 dark:text-gray-300">2</span> of <span class="font-medium text-gray-600 dark:text-gray-300">67</span> comments</div>
-            <button class="text-sm  font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400">View More Comments</button>
+            <div class="text-sm text-gray-500 dark:text-gray-400"><span class="font-medium text-gray-600 dark:text-gray-300">2</span> of <span class="font-medium text-gray-600 dark:text-gray-300">67</span> {{ __('ui.comments') }}  </div>
+            <button class="text-sm  font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400">{{ __('ui.view-more-comments') }}</button>
         </div>
         <!-- Comment form -->
         <div class="flex items-center space-x-3 mt-3">
             <img class="rounded-full shrink-0" src="{{ asset('images/user-40-02.jpg') }}" width="32" height="32" alt="User 02" />
             <div class="grow">
-                <label for="comment-form" class="sr-only">Write a comment…</label>
-                <input id="comment-form" class="form-input w-full bg-gray-100 dark:bg-gray-700 border-transparent dark:border-transparent focus:bg-white dark:focus:bg-gray-800 placeholder-gray-500" type="text" placeholder="Write a comment…">
+                <label for="comment-form" class="sr-only">{{ __('ui.write_a_comment') }}</label>
+                <input id="comment-form" class="form-input w-full bg-gray-100 dark:bg-gray-700 border-transparent dark:border-transparent focus:bg-white dark:focus:bg-gray-800 placeholder-gray-500" type="text" placeholder="{{ __('ui.write_a_comment') }}">
             </div>
         </div>
     </div>
@@ -347,7 +347,7 @@
                     @click.prevent="open = !open"
                     :aria-expanded="open"
                 >
-                    <span class="sr-only">Menu</span>
+                    <span class="sr-only">{{ __('ui.menu') }}</span>
                     <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
                         <circle cx="16" cy="16" r="2" />
                         <circle cx="10" cy="16" r="2" />
@@ -369,13 +369,13 @@
                 >
                     <ul>
                         <li>
-                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Option 1</a>
+                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.option') }} 1 </a>
                         </li>
                         <li>
-                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Option 2</a>
+                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.option') }} 2 </a>
                         </li>
                         <li>
-                            <a class="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Remove</a>
+                            <a class="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.remove') }}</a>
                         </li>
                     </ul>
                 </div>
@@ -396,7 +396,7 @@
             <div class="absolute left-4 bottom-4 right-4">
                 <div class="flex items-center space-x-1">
                     <div class="text-xs font-medium text-gray-300 px-2 py-1 bg-black/25">0:48</div>
-                    <div class="text-xs font-medium text-gray-300 px-2 py-1 bg-black/25">1M Views</div>
+                    <div class="text-xs font-medium text-gray-300 px-2 py-1 bg-black/25">1M  {{ __('ui.views') }}</div>
                 </div>
             </div>
         </div>

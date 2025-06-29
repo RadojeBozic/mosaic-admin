@@ -10,7 +10,7 @@
                 </div>
                 <!-- User info -->
                 <div>
-                    <div class="mb-2">Hey <strong class="font-medium text-gray-800 dark:text-gray-100">Mary</strong> 👋, this is your current balance:</div>
+                    <div class="mb-2"> {{ __('ui.hey') }} <strong class="font-medium text-gray-800 dark:text-gray-100">Mary</strong> 👋, {{ __('ui.this is your current balance') }}:</div>
                     <div class="text-3xl font-bold text-green-500">$47,347.09</div>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                 </li>
                 <li>
                     <button class="flex justify-center items-center w-9 h-9 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-violet-500 shadow-xs transition">
-                        <span class="sr-only">Add new account</span>
+                        <span class="sr-only">{{ __('ui.add_new_account') }} </span>
                         <svg class="fill-current" width="16" height="16" viewBox="0 0 16 16">
                             <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
                         </svg>

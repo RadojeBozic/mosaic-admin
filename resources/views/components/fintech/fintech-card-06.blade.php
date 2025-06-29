@@ -1,6 +1,6 @@
 <div class="col-span-full xl:col-span-6 bg-white dark:bg-gray-800 shadow-xs rounded-xl">
     <header class="px-5 py-4 border-b border-gray-100 dark:border-gray-700/60">
-        <h2 class="font-semibold text-gray-800 dark:text-gray-100">Recent Earnings</h2>
+        <h2 class="font-semibold text-gray-800 dark:text-gray-100"> {{ __('ui.recent_earnings') }}</h2>
     </header>
     <div class="p-3">
 
@@ -11,16 +11,16 @@
                 <thead class="text-xs uppercase text-gray-400 dark:text-gray-500 bg-gray-50 dark:bg-gray-700/50 rounded-xs">
                     <tr>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-left">Counterparty</div>
+                            <div class="font-semibold text-left">{{ __('ui.counterparty') }}</div>
                         </th>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-left">Account</div>
+                            <div class="font-semibold text-left">{{ __('ui.account') }}</div>
                         </th>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-left">Date</div>
+                            <div class="font-semibold text-left">{{ __('ui.date') }}</div>
                         </th>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-right">Amount</div>
+                            <div class="font-semibold text-right">{{ __('ui.amount') }}</div>
                         </th>
                     </tr>
                 </thead>
@@ -35,11 +35,11 @@
                                         <path d="M18 26a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8Zm0-14a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z" />
                                     </svg>
                                 </div>
-                                <div class="font-medium text-gray-800 dark:text-gray-100">Acme LTD UK</div>
+                                <div class="font-medium text-gray-800 dark:text-gray-100">{{ __('ui.acme_ltd_uk') }}</div>
                             </div>
                         </td>
                         <td class="p-2 whitespace-nowrap">
-                            <div>Revolut</div>
+                            <div>{{ __('ui.revolut') }}</div>
                         </td>
                         <td class="p-2 whitespace-nowrap">
                             <div>22/01/2024</div>
@@ -61,7 +61,7 @@
                             </div>
                         </td>
                         <td class="p-2 whitespace-nowrap">
-                            <div>Qonto</div>
+                            <div>{{ __('ui.qonto') }}</div>
                         </td>
                         <td class="p-2 whitespace-nowrap">
                             <div>22/01/2024</div>
@@ -99,11 +99,11 @@
                                 <div class="shrink-0 rounded-full mr-2 sm:mr-3">
                                     <img class="w-9 h-9 rounded-full" src="{{ asset('images/user-36-05.jpg') }}" width="36" height="36" alt="User 05" />
                                 </div>
-                                <div class="font-medium text-gray-800 dark:text-gray-100">Aprilynne Pills</div>
+                                <div class="font-medium text-gray-800 dark:text-gray-100">{{ __('ui.aprilynne_pills') }}</div>
                             </div>
                         </td>
                         <td class="p-2 whitespace-nowrap">
-                            <div>Revolut</div>
+                            <div>{{ __('ui.revolut') }}</div>
                         </td>
                         <td class="p-2 whitespace-nowrap">
                             <div>22/01/2024</div>
@@ -125,7 +125,7 @@
                             </div>
                         </td>
                         <td class="p-2 whitespace-nowrap">
-                            <div>Revolut</div>
+                            <div>{{ __('ui.revolut') }}</div>
                         </td>
                         <td class="p-2 whitespace-nowrap">
                             <div>22/01/2024</div>
@@ -140,7 +140,7 @@
         </div>
 
         <div class="text-center border-t border-gray-100 dark:border-gray-700/60 px-2">
-            <a class="block text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400 pt-4 pb-1" href="#0">View All -&gt;</a>
+            <a class="block text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400 pt-4 pb-1" href="#0">{{ __('ui.view_all') }} -&gt;</a>
         </div>
 
     </div>

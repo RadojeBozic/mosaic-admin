@@ -1,6 +1,6 @@
 <div class="flex flex-col col-span-full xl:col-span-4 bg-linear-[225deg,var(--color-gray-800),var(--color-gray-900)] shadow-xs rounded-xl">
     <header class="px-5 py-4 border-b border-gray-700/60 flex items-center">
-        <h2 class="font-semibold text-gray-200">Active Cards</h2>
+        <h2 class="font-semibold text-gray-200">Active Cards {{ __('ui.active_cards') }}</h2>
     </header>
     <div class="h-full flex flex-col px-5 py-6">
         <!-- CC container -->
@@ -60,7 +60,7 @@
                     @click.prevent="open = !open"
                     :aria-expanded="open"
                 >
-                    <span class="sr-only">Menu</span>
+                    <span class="sr-only">{{ __('ui.menu') }}</span>
                     <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
                         <circle cx="16" cy="16" r="2" />
                         <circle cx="10" cy="16" r="2" />
@@ -82,13 +82,13 @@
                 >
                     <ul>
                         <li>
-                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Option 1</a>
+                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.option_1') }}</a>
                         </li>
                         <li>
-                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Option 2</a>
+                            <a class="font-medium text-sm text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.option_2') }}</a>
                         </li>
                         <li>
-                            <a class="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">Remove</a>
+                            <a class="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" href="#0" @click="open = false" @focus="open = true" @focusout="open = false">{{ __('ui.remove') }}</a>
                         </li>
                     </ul>
                 </div>
@@ -96,11 +96,11 @@
         </div>
         <!-- Details -->
         <div class="grow flex flex-col justify-center mt-3">
-            <div class="text-xs text-gray-500 font-semibold uppercase mb-3">Details</div>
+            <div class="text-xs text-gray-500 font-semibold uppercase mb-3"> {{ __('ui.details') }}</div>
             <div class="space-y-2">
                 <div>
                     <div class="flex justify-between text-sm mb-2">
-                        <div class="text-gray-300">Payment Limits</div>
+                        <div class="text-gray-300">{{ __('ui.payment_limits') }}</div>
                         <div class="text-gray-400 italic">$780,00 <span class="text-gray-500 dark:text-gray-400">/</span> $1,500.00</div>
                     </div>
                     <div class="relative w-full h-2 bg-gray-600 rounded-sm">
@@ -109,7 +109,7 @@
                 </div>
                 <div>
                     <div class="flex justify-between text-sm mb-2">
-                        <div class="text-gray-300">ATM Limits</div>
+                        <div class="text-gray-300">{{ __('ui.atm_limits') }}</div>
                         <div class="text-gray-400 italic">$179,00 <span class="text-gray-500 dark:text-gray-400">/</span> $1,000.00</div>
                     </div>
                     <div class="relative w-full h-2 bg-gray-600 rounded-sm">

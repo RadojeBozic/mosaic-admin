@@ -8,7 +8,7 @@
             <!-- Like button -->
             <button class="absolute top-0 right-0 mt-4 mr-4">
                 <div class="text-gray-100 bg-gray-900/60 rounded-full">
-                    <span class="sr-only">Like</span>
+                    <span class="sr-only">Like {{ __('ui.like') }}</span>
                     <svg class="h-8 w-8 fill-current" viewBox="0 0 32 32">
                         <path d="M22.682 11.318A4.485 4.485 0 0019.5 10a4.377 4.377 0 00-3.5 1.707A4.383 4.383 0 0012.5 10a4.5 4.5 0 00-3.182 7.682L16 24l6.682-6.318a4.5 4.5 0 000-6.364zm-1.4 4.933L16 21.247l-5.285-5A2.5 2.5 0 0112.5 12c1.437 0 2.312.681 3.5 2.625C17.187 12.681 18.062 12 19.5 12a2.5 2.5 0 011.785 4.251h-.003z" />
                     </svg>
@@ -31,7 +31,7 @@
                     <svg class="w-4 h-3 fill-gray-400 dark:fill-gray-500 mr-2" viewBox="0 0 16 12">
                         <path d="m16 2-4 2.4V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7.6l4 2.4V2ZM2 10V2h8v8H2Z" />
                     </svg>
-                    <span>Online Event</span>
+                    <span>Online Event {{ __('ui.online_event') }}</span>
                 </div>
                 <!-- Avatars -->
                 <div class="flex items-center space-x-2">
@@ -54,7 +54,7 @@
             <!-- Like button -->
             <button class="absolute top-0 right-0 mt-4 mr-4">
                 <div class="text-gray-100 bg-gray-900/60 rounded-full">
-                    <span class="sr-only">Like</span>
+                    <span class="sr-only">Like {{ __('ui.like') }}</span>
                     <svg class="h-8 w-8 fill-current" viewBox="0 0 32 32">
                         <path d="M22.682 11.318A4.485 4.485 0 0019.5 10a4.377 4.377 0 00-3.5 1.707A4.383 4.383 0 0012.5 10a4.5 4.5 0 00-3.182 7.682L16 24l6.682-6.318a4.5 4.5 0 000-6.364zm-1.4 4.933L16 21.247l-5.285-5A2.5 2.5 0 0112.5 12c1.437 0 2.312.681 3.5 2.625C17.187 12.681 18.062 12 19.5 12a2.5 2.5 0 011.785 4.251h-.003z" />
                     </svg>
@@ -77,7 +77,7 @@
                     <svg class="w-4 h-3 fill-gray-400 dark:fill-gray-500 mr-2" viewBox="0 0 16 12">
                         <path d="m16 2-4 2.4V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7.6l4 2.4V2ZM2 10V2h8v8H2Z" />
                     </svg>
-                    <span>Online Event</span>
+                    <span> {{ __('ui.online_event') }}</span>
                 </div>
                 <!-- Avatars -->
                 <div class="flex items-center space-x-2">
@@ -123,7 +123,7 @@
                     <svg class="w-4 h-3 fill-gray-400 dark:fill-gray-500 mr-2" viewBox="0 0 16 12">
                         <path d="m16 2-4 2.4V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7.6l4 2.4V2ZM2 10V2h8v8H2Z" />
                     </svg>
-                    <span>Online Event</span>
+                    <span>{{ __('ui.online_event') }}</span>
                 </div>
                 <!-- Avatars -->
                 <div class="flex items-center space-x-2">
@@ -146,7 +146,7 @@
             <!-- Like button -->
             <button class="absolute top-0 right-0 mt-4 mr-4">
                 <div class="text-gray-100 bg-gray-900/60 rounded-full">
-                    <span class="sr-only">Like</span>
+                    <span class="sr-only">{{ __('ui.like') }}</span>
                     <svg class="h-8 w-8 fill-current" viewBox="0 0 32 32">
                         <path d="M22.682 11.318A4.485 4.485 0 0019.5 10a4.377 4.377 0 00-3.5 1.707A4.383 4.383 0 0012.5 10a4.5 4.5 0 00-3.182 7.682L16 24l6.682-6.318a4.5 4.5 0 000-6.364zm-1.4 4.933L16 21.247l-5.285-5A2.5 2.5 0 0112.5 12c1.437 0 2.312.681 3.5 2.625C17.187 12.681 18.062 12 19.5 12a2.5 2.5 0 011.785 4.251h-.003z" />
                     </svg>
@@ -169,7 +169,7 @@
                     <svg class="w-4 h-3 fill-gray-400 dark:fill-gray-500 mr-2" viewBox="0 0 16 12">
                         <path d="m16 2-4 2.4V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7.6l4 2.4V2ZM2 10V2h8v8H2Z" />
                     </svg>
-                    <span>Online Event</span>
+                    <span>{{ __('ui.online_event') }}</span>
                 </div>
                 <!-- Avatars -->
                 <div class="flex items-center space-x-2">
@@ -191,7 +191,7 @@
             <!-- Like button -->
             <button class="absolute top-0 right-0 mt-4 mr-4">
                 <div class="text-gray-100 bg-gray-900/60 rounded-full">
-                    <span class="sr-only">Like</span>
+                    <span class="sr-only"> {{ __('ui.like') }}</span>
                     <svg class="h-8 w-8 fill-current" viewBox="0 0 32 32">
                         <path d="M22.682 11.318A4.485 4.485 0 0019.5 10a4.377 4.377 0 00-3.5 1.707A4.383 4.383 0 0012.5 10a4.5 4.5 0 00-3.182 7.682L16 24l6.682-6.318a4.5 4.5 0 000-6.364zm-1.4 4.933L16 21.247l-5.285-5A2.5 2.5 0 0112.5 12c1.437 0 2.312.681 3.5 2.625C17.187 12.681 18.062 12 19.5 12a2.5 2.5 0 011.785 4.251h-.003z" />
                     </svg>
@@ -214,7 +214,7 @@
                     <svg class="w-4 h-3 fill-gray-400 dark:fill-gray-500 mr-2" viewBox="0 0 16 12">
                         <path d="m16 2-4 2.4V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7.6l4 2.4V2ZM2 10V2h8v8H2Z" />
                     </svg>
-                    <span>Online Event</span>
+                    <span>{{ __('ui.online_event') }}</span>
                 </div>
                 <!-- Avatars -->
                 <div class="flex items-center space-x-2">
@@ -236,7 +236,7 @@
             <!-- Like button -->
             <button class="absolute top-0 right-0 mt-4 mr-4">
                 <div class="text-gray-100 bg-gray-900/60 rounded-full">
-                    <span class="sr-only">Like</span>
+                    <span class="sr-only">{{ __('ui.like') }}</span>
                     <svg class="h-8 w-8 fill-current" viewBox="0 0 32 32">
                         <path d="M22.682 11.318A4.485 4.485 0 0019.5 10a4.377 4.377 0 00-3.5 1.707A4.383 4.383 0 0012.5 10a4.5 4.5 0 00-3.182 7.682L16 24l6.682-6.318a4.5 4.5 0 000-6.364zm-1.4 4.933L16 21.247l-5.285-5A2.5 2.5 0 0112.5 12c1.437 0 2.312.681 3.5 2.625C17.187 12.681 18.062 12 19.5 12a2.5 2.5 0 011.785 4.251h-.003z" />
                     </svg>
@@ -259,7 +259,7 @@
                     <svg class="w-4 h-3 fill-gray-400 dark:fill-gray-500 mr-2" viewBox="0 0 16 12">
                         <path d="m16 2-4 2.4V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7.6l4 2.4V2ZM2 10V2h8v8H2Z" />
                     </svg>
-                    <span>Online Event</span>
+                    <span>{{ __('ui.online_event') }}</span>
                 </div>
                 <!-- Avatars -->
                 <div class="flex items-center space-x-2">
@@ -282,7 +282,7 @@
             <!-- Like button -->
             <button class="absolute top-0 right-0 mt-4 mr-4">
                 <div class="text-gray-100 bg-gray-900/60 rounded-full">
-                    <span class="sr-only">Like</span>
+                    <span class="sr-only">{{ __('ui.like') }}</span>
                     <svg class="h-8 w-8 fill-current" viewBox="0 0 32 32">
                         <path d="M22.682 11.318A4.485 4.485 0 0019.5 10a4.377 4.377 0 00-3.5 1.707A4.383 4.383 0 0012.5 10a4.5 4.5 0 00-3.182 7.682L16 24l6.682-6.318a4.5 4.5 0 000-6.364zm-1.4 4.933L16 21.247l-5.285-5A2.5 2.5 0 0112.5 12c1.437 0 2.312.681 3.5 2.625C17.187 12.681 18.062 12 19.5 12a2.5 2.5 0 011.785 4.251h-.003z" />
                     </svg>
@@ -305,7 +305,7 @@
                     <svg class="w-4 h-3 fill-gray-400 dark:fill-gray-500 mr-2" viewBox="0 0 16 12">
                         <path d="m16 2-4 2.4V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7.6l4 2.4V2ZM2 10V2h8v8H2Z" />
                     </svg>
-                    <span>Online Event</span>
+                    <span>{{ __('ui.online_event') }}</span>
                 </div>
                 <!-- Avatars -->
                 <div class="flex items-center space-x-2">
@@ -327,7 +327,7 @@
             <!-- Like button -->
             <button class="absolute top-0 right-0 mt-4 mr-4">
                 <div class="text-gray-100 bg-gray-900/60 rounded-full">
-                    <span class="sr-only">Like</span>
+                    <span class="sr-only">{{ __('ui.like') }}</span>
                     <svg class="h-8 w-8 fill-current" viewBox="0 0 32 32">
                         <path d="M22.682 11.318A4.485 4.485 0 0019.5 10a4.377 4.377 0 00-3.5 1.707A4.383 4.383 0 0012.5 10a4.5 4.5 0 00-3.182 7.682L16 24l6.682-6.318a4.5 4.5 0 000-6.364zm-1.4 4.933L16 21.247l-5.285-5A2.5 2.5 0 0112.5 12c1.437 0 2.312.681 3.5 2.625C17.187 12.681 18.062 12 19.5 12a2.5 2.5 0 011.785 4.251h-.003z" />
                     </svg>
@@ -350,7 +350,7 @@
                     <svg class="w-4 h-3 fill-gray-400 dark:fill-gray-500 mr-2" viewBox="0 0 16 12">
                         <path d="m16 2-4 2.4V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7.6l4 2.4V2ZM2 10V2h8v8H2Z" />
                     </svg>
-                    <span>Online Event</span>
+                    <span>{{ __('ui.online_event') }}</span>
                 </div>
                 <!-- Avatars -->
                 <div class="flex items-center space-x-2">

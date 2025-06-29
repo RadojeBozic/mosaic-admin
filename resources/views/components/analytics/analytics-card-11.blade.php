@@ -1,6 +1,6 @@
 <div class="col-span-full bg-white dark:bg-gray-800 shadow-xs rounded-xl">
     <header class="px-5 py-4 border-b border-gray-100 dark:border-gray-700/60">
-        <h2 class="font-semibold text-gray-800 dark:text-gray-100">Top Products</h2>
+        <h2 class="font-semibold text-gray-800 dark:text-gray-100">{{ __('ui.top_products') }}</h2>
     </header>
     <div class="p-3">
 
@@ -11,25 +11,25 @@
                 <thead class="text-xs uppercase text-gray-400 dark:text-gray-500 bg-gray-50 dark:bg-gray-700/50 rounded-xs">
                     <tr>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-left">Product</div>
+                            <div class="font-semibold text-left">{{ __('ui.product') }}</div>
                         </th>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-left">Created by</div>
+                            <div class="font-semibold text-left">{{ __('ui.created_by') }}</div>
                         </th>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-left">Category</div>
+                            <div class="font-semibold text-left">{{ __('ui.category') }}</div>
                         </th>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-center">Total impressions</div>
+                            <div class="font-semibold text-center">{{ __('ui.total_impressions') }}</div>
                         </th>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-center">Top country</div>
+                            <div class="font-semibold text-center">{{ __('ui.top_country') }}</div>
                         </th>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-center">CR</div>
+                            <div class="font-semibold text-center">{{ __('ui.cr') }}</div>
                         </th>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-left">Value</div>
+                            <div class="font-semibold text-left">{{ __('ui.value') }}</div>
                         </th>
                     </tr>
                 </thead>

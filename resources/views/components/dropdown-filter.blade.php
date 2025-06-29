@@ -27,42 +27,42 @@
         x-transition:leave-end="opacity-0"
         x-cloak                
     >
-        <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase pt-1.5 pb-2 px-3">Filters</div>
+        <div class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase pt-1.5 pb-2 px-3">{{ __('ui.filters') }}</div>
         <ul class="mb-4">
             <li class="py-1 px-3">
                 <label class="flex items-center">
                     <input type="checkbox" class="form-checkbox" checked />
-                    <span class="text-sm font-medium ml-2">Direct VS Indirect</span>
+                    <span class="text-sm font-medium ml-2">{{ __('ui.direct_vs_indirect') }}</span>
                 </label>
             </li>
             <li class="py-1 px-3">
                 <label class="flex items-center">
                     <input type="checkbox" class="form-checkbox" checked />
-                    <span class="text-sm font-medium ml-2">Real Time Value</span>
+                    <span class="text-sm font-medium ml-2">{{ __('ui.real_time_value') }}</span>
                 </label>
             </li>
             <li class="py-1 px-3">
                 <label class="flex items-center">
                     <input type="checkbox" class="form-checkbox" checked />
-                    <span class="text-sm font-medium ml-2">Top Channels</span>
+                    <span class="text-sm font-medium ml-2">{{ __('ui.top_channels') }}</span>
                 </label>
             </li>
             <li class="py-1 px-3">
                 <label class="flex items-center">
                     <input type="checkbox" class="form-checkbox" />
-                    <span class="text-sm font-medium ml-2">Sales VS Refunds</span>
+                    <span class="text-sm font-medium ml-2">{{ __('ui.sales_vs_refunds') }}</span>
                 </label>
             </li>
             <li class="py-1 px-3">
                 <label class="flex items-center">
                     <input type="checkbox" class="form-checkbox" />
-                    <span class="text-sm font-medium ml-2">Last Order</span>
+                    <span class="text-sm font-medium ml-2">{{ __('ui.last_order') }}</span>
                 </label>
             </li>
             <li class="py-1 px-3">
                 <label class="flex items-center">
                     <input type="checkbox" class="form-checkbox" />
-                    <span class="text-sm font-medium ml-2">Total Spent</span>
+                    <span class="text-sm font-medium ml-2">{{ __('ui.total_spent') }}</span>
                 </label>
             </li>
         </ul>

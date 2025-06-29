@@ -1,6 +1,6 @@
 <div class="flex flex-col col-span-full sm:col-span-6 bg-white dark:bg-gray-800 shadow-xs rounded-xl">
     <header class="px-5 py-4 border-b border-gray-100 dark:border-gray-700/60 flex items-center">
-        <h2 class="font-semibold text-gray-800 dark:text-gray-100">Sales Over Time (all stores)</h2>
+        <h2 class="font-semibold text-gray-800 dark:text-gray-100">{{ __('ui.sales_over_time') }}  ({{ __('ui.all_stores') }})</h2>
     </header>
     <div class="px-5 py-3">
         <div class="flex flex-wrap justify-between items-end gap-y-2 gap-x-4">

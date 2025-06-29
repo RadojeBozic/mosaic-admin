@@ -4,13 +4,13 @@
     <div class="mb-2">
         <ul class="inline-flex flex-wrap text-sm font-medium">
             <li class="flex items-center">
-                <a class="text-gray-500 dark:text-gray-400 hover:text-violet-500 dark:hover:text-violet-500" href="{{ route('forum') }}">Home</a>
+                <a class="text-gray-500 dark:text-gray-400 hover:text-violet-500 dark:hover:text-violet-500" href="{{ route('forum') }}">{{ __('ui.home') }} </a>
                 <svg class="fill-current text-gray-400 dark:text-gray-500 mx-2" width="16" height="16" viewBox="0 0 16 16">
                     <path d="M6.6 13.4L5.2 12l4-4-4-4 1.4-1.4L12 8z" />
                 </svg>
             </li>
             <li class="flex items-center">
-                <a class="text-gray-500 dark:text-gray-400 hover:text-violet-500 dark:hover:text-violet-500" href="#0">Discussion</a>
+                <a class="text-gray-500 dark:text-gray-400 hover:text-violet-500 dark:hover:text-violet-500" href="#0">{{ __('ui.discussion') }}</a>
             </li>
         </ul>
     </div>
@@ -38,7 +38,7 @@
                 <span class="text-gray-500">2h</span>
             </div>
             <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                <span class="text-gray-500">17 Comments</span>
+                <span class="text-gray-500">17 {{ __('ui.comments') }}</span>
             </div>
         </div>
     </header>
@@ -52,7 +52,7 @@
         <div class="flex items-start space-x-3 mb-3">
             <img class="rounded-full shrink-0" src="{{ asset('images/user-40-02.jpg') }}" width="40" height="40" alt="User 02" />
             <div class="grow">
-                <label for="comment" class="sr-only">Write a comment…</label>
+                <label for="comment" class="sr-only">Write a comment… {{ __('ui.write_a_comment') }}</label>
                 <textarea id="comment" class="form-textarea w-full focus:border-gray-300" rows="4" placeholder="Write a comment…"></textarea>
             </div>
         </div>
@@ -62,7 +62,7 @@
     </div>
     <!-- Comments -->
     <div class="mt-4">
-        <h3 class="font-semibold text-gray-800 dark:text-gray-100 mb-4">Comments</h3>
+        <h3 class="font-semibold text-gray-800 dark:text-gray-100 mb-4">Comments {{ __('ui.comments') }}</h3>
         <ul class="space-y-5">
             <!-- Comment -->
             <li class="relative pl-9 space-y-5">
@@ -90,13 +90,13 @@
                                 <a class="block mr-2" href="#0">
                                     <img class="rounded-full" src="{{ asset('images/user-28-02.jpg') }}" width="24" height="24" alt="User 02" />
                                 </a>
-                                <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">ekuplu89</a>
+                                <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">ekuplu89 {{ __('ui.ekuplu89') }}</a>
                             </div>
                             <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">Reply</a>
+                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">{{ __('ui.reply') }}</a>
                             </div>
                             <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">Share</a>
+                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">{{ __('ui.share') }}</a>
                             </div>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
                             <div>
                                 <!-- Comment text -->
                                 <div class="grow text-sm text-gray-800 dark:text-gray-100 space-y-2 mb-2">
-                                    <p>That's great advice, <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">@ekuplu89</a> 👏</p>
+                                    <p>That's great advice, <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">@ekuplu89 </a> 👏</p>
                                 </div>
                                 <!-- Comment footer -->
                                 <div class="flex flex-wrap text-xs">
@@ -128,13 +128,13 @@
                                         <a class="block mr-2" href="#0">
                                             <img class="rounded-full" src="{{ asset('images/user-28-05.jpg') }}" width="24" height="24" alt="User 05" />
                                         </a>
-                                        <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">ellielong</a>
+                                        <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">ellielong {{ __('ui.ellielong') }}</a>
                                     </div>
                                     <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                                        <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">Reply</a>
+                                        <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">{{ __('ui.reply') }}</a>
                                     </div>
                                     <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                                        <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">Share</a>
+                                        <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">{{ __('ui.share') }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -167,13 +167,13 @@
                                 <a class="block mr-2" href="#0">
                                     <img class="rounded-full" src="{{ asset('images/user-28-01.jpg') }}" width="24" height="24" alt="User 01" />
                                 </a>
-                                <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">markcuttik</a>
+                                <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">markcuttik </a>
                             </div>
                             <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">Reply</a>
+                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">{{ __('ui.reply') }}</a>
                             </div>
                             <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">Share</a>
+                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">{{ __('ui.share') }}</a>
                             </div>
                         </div>
                     </div>
@@ -207,10 +207,10 @@
                                 <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">davidp1</a>
                             </div>
                             <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">Reply</a>
+                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">{{ __('ui.reply') }}</a>
                             </div>
                             <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">Share</a>
+                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">{{ __('ui.share') }}</a>
                             </div>
                         </div>
                     </div>
@@ -242,13 +242,13 @@
                                         <a class="block mr-2" href="#0">
                                             <img class="rounded-full" src="{{ asset('images/user-28-05.jpg') }}" width="24" height="24" alt="User 05" />
                                         </a>
-                                        <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">ellielong</a>
+                                        <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">ellielong </a>
                                     </div>
                                     <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                                        <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">Reply</a>
+                                        <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">{{ __('ui.reply') }}</a>
                                     </div>
                                     <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                                        <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">Share</a>
+                                        <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">{{ __('ui.share') }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -283,10 +283,10 @@
                                                 <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">davidp1</a>
                                             </div>
                                             <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">Reply</a>
+                                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0"> {{ __('ui.reply') }}</a>
                                             </div>
                                             <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">Share</a>
+                                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">{{ __('ui.share') }}</a>
                                             </div>
                                         </div>
                                     </div>
@@ -324,10 +324,10 @@
                                 <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">patrick2</a>
                             </div>
                             <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">Reply</a>
+                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">{{ __('ui.reply') }}</a>
                             </div>
                             <div class="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">Share</a>
+                                <a class="font-medium text-gray-500 hover:text-gray-600 dark:hover:text-gray-400" href="#0">{{ __('ui.share') }}</a>
                             </div>
                         </div>
                     </div>
@@ -336,7 +336,7 @@
         </ul>
         <!-- View more link -->
         <div class="text-center mt-5">
-            <button class="text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400">View More Comments</button>
+            <button class="text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400">{{ __('ui.view_more_comments') }}</button>
         </div>
     </div>
 </article>

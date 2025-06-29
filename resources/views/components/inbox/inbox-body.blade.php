@@ -15,7 +15,7 @@
                     aria-controls="inbox-sidebar"
                     :aria-expanded="inboxSidebarOpen"
                 >
-                    <span class="sr-only">Close sidebar</span>
+                    <span class="sr-only">{{ __('ui.close_sidebar') }}</span>
                     <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.7 18.7l1.4-1.4L7.8 13H20v-2H7.8l4.3-4.3-1.4-1.4L4 12z" />
                     </svg>
@@ -43,7 +43,7 @@
             </div>
             <!-- Buttons on the right side -->
             <div class="flex items-center">
-                <div class="text-xs mr-1"><span class="font-medium dark:text-gray-300">10</span> <span class="text-gray-500 dark:text-gray-400">of</span> <span class="font-medium dark:text-gray-300">467</span></div>
+                <div class="text-xs mr-1"><span class="font-medium dark:text-gray-300">10</span> <span class="text-gray-500 dark:text-gray-400">{{ __('ui.of') }} </span> <span class="font-medium dark:text-gray-300">467</span></div>
                 <button class="p-1.5 shrink-0 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 shadow-xs ml-2">
                     <svg class="fill-current text-gray-400 dark:text-gray-500" width="16" height="16" viewBox="0 0 16 16">
                         <path d="m10 13.4 1.4-1.4-4-4 4-4L10 2.6 4.6 8z" />
@@ -63,8 +63,8 @@
 
         <!-- Mail subject -->
         <header class="sm:flex sm:items-start sm:justify-between mb-4">
-            <h1 class="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold mb-1 sm:mb-0 ml-2">Chill your mind with this amazing offer 🎉</h1>
-            <button class="text-xs inline-flex font-medium bg-sky-500/20 text-sky-700 rounded-full text-center px-2.5 py-1 whitespace-nowrap">Exciting news</button>
+            <h1 class="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold mb-1 sm:mb-0 ml-2">{{ __('ui.Chill_your_mind_with_this_amazing_offer') }} 🎉</h1>
+            <button class="text-xs inline-flex font-medium bg-sky-500/20 text-sky-700 rounded-full text-center px-2.5 py-1 whitespace-nowrap">{{ __('ui.exciting_news') }}</button>
         </header>
 
         <!-- Messages box -->
@@ -185,7 +185,7 @@
         <div class="flex items-center justify-between bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700/60 px-4 sm:px-6 md:px-5 h-16">
             <!-- Plus button -->
             <button class="shrink-0 text-gray-400 dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-400 mr-3">
-                <span class="sr-only">Add</span>
+                <span class="sr-only">Add {{ __('ui.add') }}</span>
                 <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                     <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12C23.98 5.38 18.62.02 12 0zm6 13h-5v5h-2v-5H6v-2h5V6h2v5h5v2z" />
                 </svg>
@@ -193,10 +193,10 @@
             <!-- Message input -->
             <form class="grow flex">
                 <div class="grow mr-3">
-                    <label for="message-input" class="sr-only">Type a message</label>
+                    <label for="message-input" class="sr-only">{{ __('ui.type_a_message') }}</label>
                     <input id="message-input" class="form-input w-full bg-gray-100 dark:bg-gray-800 border-transparent dark:border-transparent focus:bg-white dark:focus:bg-gray-800 placeholder-gray-500" type="text" placeholder="Aa" />
                 </div>
-                <button type="submit" class="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white whitespace-nowrap">Send -&gt;</button>
+                <button type="submit" class="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white whitespace-nowrap">{{ __('ui.send') }} -&gt;</button>
             </form>
         </div>
     </div>

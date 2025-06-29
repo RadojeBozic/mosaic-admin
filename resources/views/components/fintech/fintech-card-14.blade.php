@@ -1,6 +1,6 @@
 <div id="fintech-card-14" class="col-span-full bg-white dark:bg-gray-800 shadow-xs rounded-xl">
     <header class="px-5 py-4 border-b border-gray-100 dark:border-gray-700/60">
-        <h2 class="font-semibold text-gray-800 dark:text-gray-100">Market Trends</h2>
+        <h2 class="font-semibold text-gray-800 dark:text-gray-100"> {{ __('ui.market_trends') }}</h2>
     </header>
     <div class="p-3">
 
@@ -11,19 +11,19 @@
                 <thead class="text-xs uppercase text-gray-400 dark:text-gray-500 bg-gray-50 dark:bg-gray-700/50 rounded-xs">
                     <tr>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-left">Market</div>
+                            <div class="font-semibold text-left"> {{ __('ui.market') }}</div>
                         </th>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-left">Mkt Cap</div>
+                            <div class="font-semibold text-left">{{ __('ui.mkt_cap') }}</div>
                         </th>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-left">Chart</div>
+                            <div class="font-semibold text-left">{{ __('ui.chart') }}</div>
                         </th>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-left">Price</div>
+                            <div class="font-semibold text-left">{{ __('ui.price') }}</div>
                         </th>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-left">Chg. (24h)</div>
+                            <div class="font-semibold text-left">{{ __('ui.chg_24h') }}</div>
                         </th>
                     </tr>
                 </thead>
@@ -39,8 +39,8 @@
                                 </svg>
                                 
                                 <div>
-                                    <div class="text-gray-800 dark:text-gray-100 uppercase">Gvolt</div>
-                                    <div class="text-xs text-gray-500">Greenvolt Energias</div>
+                                    <div class="text-gray-800 dark:text-gray-100 uppercase">Gvolt {{ __('ui.gvolt') }} </div>
+                                    <div class="text-xs text-gray-500">{{ __('ui.greenvolt_energias') }}</div>
                                 </div>
                             </div>
                         </td>

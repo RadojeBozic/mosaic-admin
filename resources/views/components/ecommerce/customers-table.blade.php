@@ -1,6 +1,6 @@
 <div class="bg-white dark:bg-gray-800 shadow-xs rounded-xl">
     <header class="px-5 py-4">
-        <h2 class="font-semibold text-gray-800 dark:text-gray-100">All Customers <span class="text-gray-400 dark:text-gray-500 font-medium">{{ $count }}</span></h2>
+        <h2 class="font-semibold text-gray-800 dark:text-gray-100">{{ __('ui.all_customers') }} <span class="text-gray-400 dark:text-gray-500 font-medium">{{ $count }}</span></h2>
     </header>
 
     <div x-data="handleSelect">
@@ -14,37 +14,37 @@
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
                             <div class="flex items-center">
                                 <label class="inline-flex">
-                                    <span class="sr-only">Select all</span>
+                                    <span class="sr-only">{{ __('ui.select_all') }}</span>
                                     <input id="parent-checkbox" class="form-checkbox" type="checkbox" @click="toggleAll" />
                                 </label>
                             </div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
-                            <span class="sr-only">Favourite</span>
+                            <span class="sr-only">{{ __('ui.favourite') }}</span>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold text-left">Order</div>
+                            <div class="font-semibold text-left">{{ __('ui.order') }}</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold text-left">Email</div>
+                            <div class="font-semibold text-left">{{ __('ui.email') }}</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold text-left">Location</div>
+                            <div class="font-semibold text-left">{{ __('ui.location') }}</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold">Orders</div>
+                            <div class="font-semibold">{{ __('ui.orders') }}</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold text-left">Last order</div>
+                            <div class="font-semibold text-left">{{ __('ui.last_order') }}</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold text-left">Total spent</div>
+                            <div class="font-semibold text-left">{{ __('ui.total_spent') }}</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <div class="font-semibold">Refunds</div>
+                            <div class="font-semibold">{{ __('ui.refunds') }}</div>
                         </th>
                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                            <span class="sr-only">Menu</span>
+                            <span class="sr-only">{{ __('ui.menu') }}</span>
                         </th>
                     </tr>
                 </thead>
@@ -57,7 +57,7 @@
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
                                 <div class="flex items-center">
                                     <label class="inline-flex">
-                                        <span class="sr-only">Select</span>
+                                        <span class="sr-only">{{ __('ui.select') }}</span>
                                         <input class="table-item form-checkbox" type="checkbox" @click="uncheckParent" />
                                     </label>
                                 </div>
@@ -99,7 +99,7 @@
                             </td>
                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
                                 <button class="text-gray-400 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400 rounded-full">
-                                    <span class="sr-only">Menu</span>
+                                    <span class="sr-only">{{ __('ui.menu') }}</span>
                                     <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
                                         <circle cx="16" cy="16" r="2" />
                                         <circle cx="10" cy="16" r="2" />

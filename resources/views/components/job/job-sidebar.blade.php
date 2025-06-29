@@ -26,7 +26,7 @@
         <div class="relative">
             <div class="text-sm font-medium text-gray-800 dark:text-violet-200 mb-2">Remember to keep track of your job research.</div>
             <div class="text-right">
-                <a class="text-sm font-medium text-violet-500 hover:text-violet-600" href="#0">Create Alert -&gt;</a>
+                <a class="text-sm font-medium text-violet-500 hover:text-violet-600" href="#0">{{ __('ui.create_alert') }} -&gt;</a>
             </div>
         </div>
     </div>
@@ -35,58 +35,58 @@
         <div class="grid md:grid-cols-2 xl:grid-cols-1 gap-6">
             <!-- Group 1 -->
             <div>
-                <div class="text-sm text-gray-800 dark:text-gray-100 font-semibold mb-3">Job Types</div>
+                <div class="text-sm text-gray-800 dark:text-gray-100 font-semibold mb-3">Job Types {{ __('ui.job_types') }}</div>
                 <ul class="space-y-2">
                     <li>
                         <label class="flex items-center">
                             <input type="checkbox" class="form-checkbox" checked />
-                            <span class="text-sm text-gray-600 dark:text-gray-300 font-medium ml-2">Programming</span>
+                            <span class="text-sm text-gray-600 dark:text-gray-300 font-medium ml-2">{{ __('ui.programming') }}</span>
                         </label>
                     </li>
                     <li>
                         <label class="flex items-center">
                             <input type="checkbox" class="form-checkbox" />
-                            <span class="text-sm text-gray-600 dark:text-gray-300 font-medium ml-2">Design</span>
+                            <span class="text-sm text-gray-600 dark:text-gray-300 font-medium ml-2">{{ __('ui.design') }}</span>
                         </label>
                     </li>
                     <li>
                         <label class="flex items-center">
                             <input type="checkbox" class="form-checkbox" />
-                            <span class="text-sm text-gray-600 dark:text-gray-300 font-medium ml-2">Management / Finance</span>
+                            <span class="text-sm text-gray-600 dark:text-gray-300 font-medium ml-2">{{ __('ui.management_finance') }}</span>
                         </label>
                     </li>
                     <li>
                         <label class="flex items-center">
                             <input type="checkbox" class="form-checkbox" />
-                            <span class="text-sm text-gray-600 dark:text-gray-300 font-medium ml-2">Customer Support</span>
+                            <span class="text-sm text-gray-600 dark:text-gray-300 font-medium ml-2">{{ __('ui.customer_support') }}</span>
                         </label>
                     </li>
                     <li>
                         <label class="flex items-center">
                             <input type="checkbox" class="form-checkbox" />
-                            <span class="text-sm text-gray-600 dark:text-gray-300 font-medium ml-2">Sales / Marketing</span>
+                            <span class="text-sm text-gray-600 dark:text-gray-300 font-medium ml-2">{{ __('ui.sales_marketing') }}</span>
                         </label>
                     </li>
                 </ul>
             </div>
             <!-- Group 2 -->
             <div>
-                <div class="text-sm text-gray-800 dark:text-gray-100 font-semibold mb-3">Company Culture</div>
+                <div class="text-sm text-gray-800 dark:text-gray-100 font-semibold mb-3">{{ __('ui.company_culture') }}</div>
                 <div class="flex items-center" x-data="{ checked: true }">
                     <div class="form-switch">
                         <input type="checkbox" id="company-toggle" class="sr-only" x-model="checked" />
                         <label for="company-toggle">
                             <span class="bg-white shadow-xs" aria-hidden="true"></span>
-                            <span class="sr-only">Company Culture</span>
+                            <span class="sr-only">{{ __('ui.company_culture') }}</span>
                         </label>
                     </div>
                     <div class="text-sm text-gray-400 dark:text-gray-500 italic ml-2" x-text="checked ? 'On' : 'Off'"></div>
                 </div>
-                <div class="text-sm dark:text-gray-500 italic mt-3">Only show companies that are creating a positive culture</div>
+                <div class="text-sm dark:text-gray-500 italic mt-3">{{ __('ui.positive_culture') }}</div>
             </div>
             <!-- Group 3 -->
             <div>
-                <div class="text-sm text-gray-800 dark:text-gray-100 font-semibold mb-3">Salary Range</div>
+                <div class="text-sm text-gray-800 dark:text-gray-100 font-semibold mb-3">{{ __('ui.salary_range') }}</div>
                 <ul class="space-y-2">
                     <li>
                         <label class="flex items-center">
@@ -109,25 +109,25 @@
                     <li>
                         <label class="flex items-center">
                             <input type="checkbox" class="form-checkbox" />
-                            <span class="text-sm text-gray-600 dark:text-gray-300 font-medium ml-2">Drawing / Painting</span>
+                            <span class="text-sm text-gray-600 dark:text-gray-300 font-medium ml-2">Drawing / Painting  {{ __('ui.drawing_painting') }} </span>
                         </label>
                     </li>
                 </ul>
             </div>
             <!-- Group 4 -->
             <div>
-                <div class="text-sm text-gray-800 dark:text-gray-100 font-semibold mb-3">Immigration</div>
+                <div class="text-sm text-gray-800 dark:text-gray-100 font-semibold mb-3">{{ __('ui.immigration') }}</div>
                 <div class="flex items-center" x-data="{ checked: false }">
                     <div class="form-switch">
                         <input type="checkbox" id="immigration-toggle" class="sr-only" x-model="checked" />
                         <label for="immigration-toggle">
                             <span class="bg-white shadow-xs" aria-hidden="true"></span>
-                            <span class="sr-only">Immigration</span>
+                            <span class="sr-only">{{ __('ui.immigration') }}</span>
                         </label>
                     </div>
                     <div class="text-sm text-gray-400 dark:text-gray-500 italic ml-2" x-text="checked ? 'On' : 'Off'"></div>
                 </div>
-                <div class="text-sm dark:text-gray-500 italic mt-3">Only show companies that can sponsor a visa</div>
+                <div class="text-sm dark:text-gray-500 italic mt-3">{{ __('ui.immigration_description') }}</div>
             </div>
         </div>
     </div>

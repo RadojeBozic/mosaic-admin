@@ -6,23 +6,23 @@
         <!-- Plans -->
         <section>
             <div class="mb-8">
-                <h2 class="text-2xl text-gray-800 dark:text-gray-100 font-bold mb-4">Plans</h2>
-                <div class="text-sm">This workspace’s Basic Plan is set to <strong class="font-medium">$34</strong> per month and will renew on <strong class="font-medium">July 9, 2024</strong>.</div>
+                <h2 class="text-2xl text-gray-800 dark:text-gray-100 font-bold mb-4">{{ __('ui.plans') }}</h2>
+                <div class="text-sm">{{ __('ui.plans_description', ['price' => '$34', 'date' => 'July 9, 2024']) }}</div>
             </div>
 
             <!-- Pricing -->
             <div x-data="{ annual: true }">
                 <!-- Toggle switch -->
                 <div class="flex items-center space-x-3 mb-6">
-                    <div class="text-sm text-gray-500 font-medium">Monthly</div>
+                    <div class="text-sm text-gray-500 font-medium">{{ __('ui.monthly') }}</div>
                     <div class="form-switch">
                         <input type="checkbox" id="toggle" class="sr-only" x-model="annual" />
                         <label for="toggle">
                             <span class="bg-white shadow-xs" aria-hidden="true"></span>
-                            <span class="sr-only">Pay annually</span>
+                            <span class="sr-only">{{ __('ui.pay_annually') }}</span>
                         </label>
                     </div>
-                    <div class="text-sm text-gray-500 font-medium">Annually <span class="text-green-500">(-20%)</span></div>
+                    <div class="text-sm text-gray-500 font-medium">{{ __('ui.annually') }} <span class="text-green-500">(-20%)</span></div>
                 </div>
                 <!-- Pricing tabs -->
                 <div class="grid grid-cols-12 gap-6">
@@ -36,18 +36,18 @@
                                         <path d="M12 17a.833.833 0 01-.833-.833 3.333 3.333 0 00-3.334-3.334.833.833 0 110-1.666 3.333 3.333 0 003.334-3.334.833.833 0 111.666 0 3.333 3.333 0 003.334 3.334.833.833 0 110 1.666 3.333 3.333 0 00-3.334 3.334c0 .46-.373.833-.833.833z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-lg text-gray-800 dark:text-gray-100 font-semibold">Basic</h3>
+                                <h3 class="text-lg text-gray-800 dark:text-gray-100 font-semibold">{{ __('ui.basic') }}</h3>
                             </header>
-                            <div class="text-sm mb-2">Ideal for individuals that need a custom solution with custom tools.</div>
+                            <div class="text-sm mb-2">{{ __('ui.basic_description') }}</div>
                             <!-- Price -->
                             <div class="text-gray-800 dark:text-gray-100 font-bold mb-4">
                                 <span class="text-2xl">$</span><span class="text-3xl" x-text="annual ? '14' : '19'">14</span><span class="text-gray-500 font-medium text-sm">/mo</span>
                             </div>
                             <!-- CTA -->
-                            <button class="btn border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300 w-full">Downgrade</button>
+                            <button class="btn border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300 w-full">{{ __('ui.downgrade') }}</button>
                         </div>
                         <div class="px-5 pt-4 pb-5">
-                            <div class="text-xs text-gray-800 dark:text-gray-100 font-semibold uppercase mb-4">What's included</div>
+                            <div class="text-xs text-gray-800 dark:text-gray-100 font-semibold uppercase mb-4">{{ __('ui.whats_included') }}</div>
                             <!-- List -->
                             <ul>
                                 <li class="flex items-center py-1">
@@ -60,7 +60,7 @@
                                     <svg class="w-3 h-3 shrink-0 fill-current text-green-500 mr-2" viewBox="0 0 12 12">
                                         <path d="M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z" />
                                     </svg>
-                                    <div class="text-sm">Quis nostrud exercitation</div>
+                                    <div class="text-sm">Quis nostrud exercitation </div>
                                 </li>
                                 <li class="flex items-center py-1">
                                     <svg class="w-3 h-3 shrink-0 fill-current text-green-500 mr-2" viewBox="0 0 12 12">
@@ -87,9 +87,9 @@
                                         <path d="M12 17a.833.833 0 01-.833-.833 3.333 3.333 0 00-3.334-3.334.833.833 0 110-1.666 3.333 3.333 0 003.334-3.334.833.833 0 111.666 0 3.333 3.333 0 003.334 3.334.833.833 0 110 1.666 3.333 3.333 0 00-3.334 3.334c0 .46-.373.833-.833.833z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-lg text-gray-800 dark:text-gray-100 font-semibold">Standard</h3>
+                                <h3 class="text-lg text-gray-800 dark:text-gray-100 font-semibold">{{ __('ui.standard') }}</h3>
                             </header>
-                            <div class="text-sm mb-2">Ideal for individuals that need a custom solution with custom tools.</div>
+                            <div class="text-sm mb-2">{{ __('ui.standard_description') }}</div>
                             <!-- Price -->
                             <div class="text-gray-800 dark:text-gray-100 font-bold mb-4">
                                 <span class="text-2xl">$</span><span class="text-3xl" x-text="annual ? '34' : '39'">34</span><span class="text-gray-500 font-medium text-sm">/mo</span>
@@ -99,11 +99,11 @@
                                 <svg class="w-3 h-3 shrink-0 fill-current mr-2" viewBox="0 0 12 12">
                                     <path d="M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z" />
                                 </svg>
-                                <span>Current Plan</span>
+                                <span>{{ __('ui.current_plan') }}</span>
                             </button>
                         </div>
                         <div class="px-5 pt-4 pb-5">
-                            <div class="text-xs text-gray-800 dark:text-gray-100 font-semibold uppercase mb-4">What's included</div>
+                            <div class="text-xs text-gray-800 dark:text-gray-100 font-semibold uppercase mb-4">{{ __('ui.whats_included') }}</div>
                             <!-- List -->
                             <ul>
                                 <li class="flex items-center py-1">
@@ -149,18 +149,18 @@
                                         <path d="M12 17a.833.833 0 01-.833-.833 3.333 3.333 0 00-3.334-3.334.833.833 0 110-1.666 3.333 3.333 0 003.334-3.334.833.833 0 111.666 0 3.333 3.333 0 003.334 3.334.833.833 0 110 1.666 3.333 3.333 0 00-3.334 3.334c0 .46-.373.833-.833.833z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-lg text-gray-800 dark:text-gray-100 font-semibold">Plus</h3>
+                                <h3 class="text-lg text-gray-800 dark:text-gray-100 font-semibold">{{ __('ui.plus') }}</h3>
                             </header>
-                            <div class="text-sm mb-2">Ideal for individuals that need a custom solution with custom tools.</div>
+                            <div class="text-sm mb-2">{{ __('ui.plus_description') }}</div>
                             <!-- Price -->
                             <div class="text-gray-800 dark:text-gray-100 font-bold mb-4">
                                 <span class="text-2xl">$</span><span class="text-3xl" x-text="annual ? '74' : '79'">74</span><span class="text-gray-500 font-medium text-sm">/mo</span>
                             </div>
                             <!-- CTA -->
-                            <button class="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white w-full">Upgrade</button>
+                            <button class="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white w-full">{{ __('ui.upgrade') }}</button>
                         </div>
                         <div class="px-5 pt-4 pb-5">
-                            <div class="text-xs text-gray-800 dark:text-gray-100 font-semibold uppercase mb-4">What's included</div>
+                            <div class="text-xs text-gray-800 dark:text-gray-100 font-semibold uppercase mb-4">{{ __('ui.whats_included') }}</div>
                             <!-- List -->
                             <ul>
                                 <li class="flex items-center py-1">
@@ -209,20 +209,20 @@
         <!-- Contact Sales -->
         <section>
             <div class="px-5 py-3 bg-linear-to-r from-violet-500/[0.12] dark:from-violet-500/[0.24] to-violet-500/[0.04] rounded-lg text-center xl:text-left xl:flex xl:flex-wrap xl:justify-between xl:items-center">
-                <div class="text-gray-800 dark:text-gray-100 font-semibold mb-2 xl:mb-0">Looking for different configurations?</div>
-                <button class="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">Contact Sales</button>
+                <div class="text-gray-800 dark:text-gray-100 font-semibold mb-2 xl:mb-0">{{ __('ui.looking_for_different_configurations') }}</div>
+                <button class="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">{{ __('ui.contact_sales') }}</button>
             </div>
         </section>
 
         <!-- FAQs -->
         <section>
             <div class="my-8">
-                <h2 class="text-2xl text-gray-800 dark:text-gray-100 font-bold">FAQs</h2>
+                <h2 class="text-2xl text-gray-800 dark:text-gray-100 font-bold">{{ __('ui.faqs') }}</h2>
             </div>
             <ul class="space-y-5">
                 <li>
                     <div class="font-semibold text-gray-800 dark:text-gray-100 mb-1">
-                        What is the difference between the three versions?
+                        {{ __('ui.difference_between_versions') }}
                     </div>
                     <div class="text-sm">
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
@@ -238,7 +238,7 @@
                 </li>
                 <li>
                     <div class="font-semibold text-gray-800 dark:text-gray-100 mb-1">
-                        Got more questions?
+                        Got more questions? 
                     </div>
                     <div class="text-sm">
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum in voluptate velit esse cillum dolore eu fugiat <a class="font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">contact us</a>.
@@ -253,8 +253,8 @@
     <footer>
         <div class="flex flex-col px-6 py-5 border-t border-gray-200 dark:border-gray-700/60">
             <div class="flex self-end">
-                <button class="btn dark:bg-gray-800 border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300">Cancel</button>
-                <button class="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white ml-3">Save Changes</button>
+                <button class="btn dark:bg-gray-800 border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-800 dark:text-gray-300">{{ __('ui.cancel') }}</button>
+                <button class="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white ml-3">{{ __('ui.save_changes') }}</button>
             </div>
         </div>
     </footer>
