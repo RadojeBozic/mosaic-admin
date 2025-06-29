@@ -7,7 +7,7 @@
 ## 🔧 Instalacija
 
 ```bash
-git clone https://github.com/tvoj-profil/mosaic-admin.git
+git clone https://github.com/RadojeBozic/mosaic-admin
 cd mosaic-admin
 composer install
 cp .env.example .env
