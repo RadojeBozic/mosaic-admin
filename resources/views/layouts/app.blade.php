@@ -46,12 +46,12 @@
         <!-- Page wrapper -->
         <div class="flex h-[100dvh] overflow-hidden">
 
-            <x-app.sidebar :variant="$attributes['sidebarVariant']" />
+            <x-app.sidebar :variant="isset($attributes) ? $attributes['sidebarVariant'] ?? null : null" />
 
             <!-- Content area -->
-            <div class="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden @if($attributes['background']){{ $attributes['background'] }}@endif" x-ref="contentarea">
+            <div class="... {{ isset($attributes['background']) ? $attributes['background'] : '' }}">
 
-                <x-app.header :variant="$attributes['headerVariant']" />
+            <x-app.header :variant="isset($attributes) ? $attributes['headerVariant'] ?? null : null" />
 
                 <main class="grow">
                     {{ $slot }}

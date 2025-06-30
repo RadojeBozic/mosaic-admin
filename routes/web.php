@@ -10,6 +10,7 @@ use App\Http\Controllers\MemberController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\CampaignController;
+use App\Models\Message;
 
 /*
 |--------------------------------------------------------------------------
@@ -190,5 +191,10 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     })->name('icons-page');
     Route::fallback(function() {
         return view('pages/utility/404');
-    });    
+    }); 
+    /* Route::get('/admin/messages', function () {
+    $messages = Message::latest()->get();
+    return view('pages.messages.index', compact('messages'));
+    })->middleware(['auth']);  */
+
 });
